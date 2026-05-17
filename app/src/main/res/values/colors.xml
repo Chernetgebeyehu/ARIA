@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#6C63FF</color>
+    <color name="primary_dark">#5A52D5</color>
+    <color name="accent">#FF6584</color>
+    <color name="background_dark">#0F0E17</color>
+    <color name="surface_dark">#1A1A2E</color>
+    <color name="card_dark">#222244</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#B0B0C0</color>
+    <color name="user_bubble">#6C63FF</color>
+    <color name="ai_bubble">#2A2A4A</color>
+    <color name="safe_green">#4CAF50</color>
+    <color name="warning_orange">#FF9800</color>
+    <color name="danger_red">#F44336</color>
+    <color name="input_bg">#16213E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

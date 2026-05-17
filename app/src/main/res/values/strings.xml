@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ARIA</string>
+    <string name="accessibility_service_description">
+        ARIA reads on-screen content to help detect scams,
+        analyze links, and assist you with safety checks.
+        No data is stored or shared.
+    </string>
+    <string name="notification_channel_name">ARIA Assistant</string>
+    <string name="notification_channel_desc">Keeps ARIA running</string>
+</resources>
