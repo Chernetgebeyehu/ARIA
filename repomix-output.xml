@@ -1,0 +1,4526 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.gitignore
+.gitignore.txt
+app/.gitignore
+app/build.gradle.kts
+app/proguard-rules.pro
+app/src/androidTest/java/com/cherinet/aria/ExampleInstrumentedTest.kt
+app/src/main/AndroidManifest.xml
+app/src/main/java/com/cherinet/aria/ai/AiManager.kt
+app/src/main/java/com/cherinet/aria/ai/OpenRouterModels.kt
+app/src/main/java/com/cherinet/aria/ai/SecurityAnalyzer.kt
+app/src/main/java/com/cherinet/aria/automation/ActionRouter.kt
+app/src/main/java/com/cherinet/aria/automation/AppController.kt
+app/src/main/java/com/cherinet/aria/automation/ContactsHelper.kt
+app/src/main/java/com/cherinet/aria/MainActivity.kt
+app/src/main/java/com/cherinet/aria/model/ChatMessage.kt
+app/src/main/java/com/cherinet/aria/services/FloatingButtonService.kt
+app/src/main/java/com/cherinet/aria/services/NotificationReaderService.kt
+app/src/main/java/com/cherinet/aria/services/ScreenReaderService.kt
+app/src/main/java/com/cherinet/aria/services/WakeWordService.kt
+app/src/main/java/com/cherinet/aria/ui/ApiKeyActivity.kt
+app/src/main/java/com/cherinet/aria/ui/ChatActivity.kt
+app/src/main/java/com/cherinet/aria/ui/ChatAdapter.kt
+app/src/main/java/com/cherinet/aria/voice/VoiceManager.kt
+app/src/main/res/drawable/bg_button_primary.xml
+app/src/main/res/drawable/bg_card.xml
+app/src/main/res/drawable/bg_floating_button.xml
+app/src/main/res/drawable/bg_input_field.xml
+app/src/main/res/drawable/bg_message_ai.xml
+app/src/main/res/drawable/bg_message_user.xml
+app/src/main/res/drawable/ic_assistant.xml
+app/src/main/res/drawable/ic_launcher_background.xml
+app/src/main/res/drawable/ic_launcher_foreground.xml
+app/src/main/res/drawable/ic_mic.xml
+app/src/main/res/drawable/ic_send.xml
+app/src/main/res/layout/activity_api_key.xml
+app/src/main/res/layout/activity_chat.xml
+app/src/main/res/layout/activity_main.xml
+app/src/main/res/layout/item_message_ai.xml
+app/src/main/res/layout/item_message_user.xml
+app/src/main/res/layout/layout_floating_button.xml
+app/src/main/res/mipmap-anydpi/ic_launcher_round.xml
+app/src/main/res/mipmap-anydpi/ic_launcher.xml
+app/src/main/res/mipmap-hdpi/ic_launcher_round.webp
+app/src/main/res/mipmap-hdpi/ic_launcher.webp
+app/src/main/res/mipmap-mdpi/ic_launcher_round.webp
+app/src/main/res/mipmap-mdpi/ic_launcher.webp
+app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp
+app/src/main/res/mipmap-xhdpi/ic_launcher.webp
+app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp
+app/src/main/res/mipmap-xxhdpi/ic_launcher.webp
+app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp
+app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp
+app/src/main/res/values-night/themes.xml
+app/src/main/res/values/colors.xml
+app/src/main/res/values/strings.xml
+app/src/main/res/values/themes.xml
+app/src/main/res/xml/accessibility_service_config.xml
+app/src/main/res/xml/backup_rules.xml
+app/src/main/res/xml/data_extraction_rules.xml
+app/src/test/java/com/cherinet/aria/ExampleUnitTest.kt
+build.gradle.kts
+gradle.properties
+gradle/gradle-daemon-jvm.properties
+gradle/libs.versions.toml
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+gradlew
+gradlew.bat
+README.md
+screenshots/chat.jpg
+screenshots/home.jpg
+screenshots/voice.jpg
+settings.gradle.kts
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="app/src/androidTest/java/com/cherinet/aria/ExampleInstrumentedTest.kt">
+package com.cherinet.aria
+
+import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.ext.junit.runners.AndroidJUnit4
+
+import org.junit.Test
+import org.junit.runner.RunWith
+
+import org.junit.Assert.*
+
+/**
+ * Instrumented test, which will execute on an Android device.
+ *
+ * See [testing documentation](http://d.android.com/tools/testing).
+ */
+@RunWith(AndroidJUnit4::class)
+class ExampleInstrumentedTest {
+    @Test
+    fun useAppContext() {
+        // Context of the app under test.
+        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
+        assertEquals("com.cherinet.aria", appContext.packageName)
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/ai/AiManager.kt">
+package com.cherinet.aria.ai
+
+import android.content.Context
+import androidx.security.crypto.EncryptedSharedPreferences
+import androidx.security.crypto.MasterKey
+import com.google.gson.Gson
+import com.google.gson.JsonArray
+import com.google.gson.JsonObject
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.withContext
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.RequestBody.Companion.toRequestBody
+import java.util.concurrent.TimeUnit
+
+class AiManager private constructor(
+    private val context: Context
+) {
+
+    companion object {
+        @Volatile
+        private var instance: AiManager? = null
+
+        fun getInstance(context: Context): AiManager =
+            instance ?: synchronized(this) {
+                instance ?: AiManager(context.applicationContext)
+                    .also { instance = it }
+            }
+
+        private const val MAX_HISTORY = 10
+        private const val GEMINI_MODEL = "gemini-2.5-flash"
+        private const val GEMINI_URL =
+            "https://generativelanguage.googleapis.com/v1beta/models/" +
+                    "$GEMINI_MODEL:generateContent"
+    }
+
+    private val client = OkHttpClient.Builder()
+        .connectTimeout(30, TimeUnit.SECONDS)
+        .readTimeout(60, TimeUnit.SECONDS)   // increased: complex reasoning takes longer
+        .writeTimeout(30, TimeUnit.SECONDS)
+        .build()
+
+    private val gson = Gson()
+    private val history = mutableListOf<JsonObject>()
+
+    // The system prompt tells ARIA how to behave.
+    // We expanded the available tools to match what AppController can do.
+    private val systemPrompt = """
+You are ARIA (Adaptive Reasoning and Intelligent Assistant), a smart Android AI assistant.
+
+CRITICAL RULES - NEVER break these:
+1. ALWAYS respond with raw JSON only. No exceptions.
+2. NEVER wrap your response in markdown, code blocks, or backticks.
+3. Your ENTIRE response must be a single JSON object and nothing else.
+
+═══ RESPONSE FORMATS ═══
+
+For ACTIONS (when user wants to DO something):
+{"type":"action","spoken":"What you say to the user","actions":[{"tool":"tool_name","value":"value_here"}]}
+
+For CONVERSATION (questions, advice, information):
+{"type":"chat","text":"your response here"}
+
+For SECURITY ANALYSIS:
+{"type":"security","verdict":"safe|warning|danger","text":"your analysis"}
+
+═══ AVAILABLE TOOLS ═══
+
+open_app       → value: app name (e.g. "youtube", "whatsapp", "camera")
+search         → value: search query
+call           → value: contact name or phone number
+sms            → value: contact name
+alarm          → value: time like "7:30am" or "14:00"
+timer          → value: duration like "5 minutes" or "30 seconds"
+settings       → value: "wifi", "bluetooth", "brightness", "volume", or "general"
+open_url       → value: full URL
+
+═══ EXAMPLES ═══
+
+User: "Open YouTube"
+{"type":"action","spoken":"Opening YouTube for you!","actions":[{"tool":"open_app","value":"youtube"}]}
+
+User: "Call mom"
+{"type":"action","spoken":"Calling mom now.","actions":[{"tool":"call","value":"mom"}]}
+
+User: "Set alarm for 7am"
+{"type":"action","spoken":"Setting your alarm for 7 AM.","actions":[{"tool":"alarm","value":"7:00am"}]}
+
+User: "Search for Ethiopian restaurants near me"
+{"type":"action","spoken":"Searching for that now.","actions":[{"tool":"search","value":"Ethiopian restaurants near me"}]}
+
+User: "What is the capital of Ethiopia?"
+{"type":"chat","text":"The capital of Ethiopia is Addis Ababa (አዲስ አበባ), which means 'New Flower' in Amharic. It's one of Africa's largest cities and hosts the African Union headquarters."}
+
+WRONG - never do this:
+```json
+{"type":"chat","text":"hello"}
+CORRECT:
+{"type":"chat","text":"hello"}
+""".trimIndent()
+    // ========= ENCRYPTED API KEY STORAGE =========
+// This is MUCH safer than plain SharedPreferences.
+// Uses Android Keystore hardware encryption.
+    private fun getEncryptedPrefs() = try {
+        val masterKey = MasterKey.Builder(context)
+            .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
+            .build()
+        EncryptedSharedPreferences.create(
+            context,
+            "aria_secure_prefs",
+            masterKey,
+            EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
+            EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
+        )
+    } catch (e: Exception) {
+        // Fallback to regular prefs if encryption fails (older devices)
+        context.getSharedPreferences("aria_prefs", Context.MODE_PRIVATE)
+    }
+
+    fun getApiKey(): String {
+        // Check encrypted prefs first, then fall back to old plain prefs
+        // (for users who already saved their key before this upgrade)
+        val encrypted = getEncryptedPrefs().getString("api_key", "") ?: ""
+        if (encrypted.isNotBlank()) return encrypted
+
+        // Migrate from old unencrypted storage if exists
+        val old = context.getSharedPreferences("aria_prefs", Context.MODE_PRIVATE)
+            .getString("api_key", "") ?: ""
+        if (old.isNotBlank()) {
+            // Save to encrypted storage and delete old
+            saveApiKey(old)
+            context.getSharedPreferences("aria_prefs", Context.MODE_PRIVATE)
+                .edit().remove("api_key").apply()
+        }
+        return old
+    }
+
+    fun saveApiKey(key: String) {
+        getEncryptedPrefs().edit().putString("api_key", key).apply()
+    }
+
+    fun clearApiKey() {
+        getEncryptedPrefs().edit().remove("api_key").apply()
+    }
+
+    fun isApiKeySet() = getApiKey().isNotBlank()
+
+    private fun isGeminiKey(key: String) = key.startsWith("AIza")
+    private fun isOpenRouterKey(key: String) = key.startsWith("sk-or-")
+
+    // Allow choosing a specific OpenRouter model
+// Default is whatever OpenRouterModels.DEFAULT is set to
+    var selectedOpenRouterModel: String = OpenRouterModels.DEFAULT
+
+    // ========= ENTRY POINT =========
+    suspend fun sendMessage(
+        message: String,
+        screen: String? = null
+    ): String = withContext(Dispatchers.IO) {
+
+        val apiKey = getApiKey()
+        if (apiKey.isBlank()) {
+            return@withContext buildJsonChat(
+                "No API key set. Please enter your Gemini or OpenRouter API key."
+            )
+        }
+
+        val finalMessage =
+            if (screen != null)
+                "$message\n\nScreen context:\n${screen.take(1200)}"
+            else message
+
+        var lastError = ""
+        repeat(3) { attempt ->
+            try {
+                val result = when {
+                    isGeminiKey(apiKey) -> callGemini(apiKey, finalMessage)
+                    isOpenRouterKey(apiKey) -> callOpenRouter(apiKey, finalMessage)
+                    else -> return@withContext buildJsonChat(
+                        "Unknown API key format. Use a Gemini key (starts with AIza) " +
+                                "or OpenRouter key (starts with sk-or-)"
+                    )
+                }
+                if (result.contains("TOO_MANY_REQUESTS") || result.contains("429")) {
+                    lastError = result
+                    if (attempt < 2) delay(3000L * (attempt + 1))
+                } else {
+                    return@withContext result
+                }
+            } catch (e: Exception) {
+                lastError = buildJsonChat("Error: ${e.localizedMessage ?: "unknown"}")
+                if (attempt < 2) delay(2000L)
+            }
+        }
+        return@withContext lastError.ifBlank {
+            buildJsonChat("Something went wrong. Please try again.")
+        }
+    }
+
+    // ========= GEMINI =========
+    private fun callGemini(apiKey: String, message: String): String {
+        val contents = JsonArray()
+        history.forEach { contents.add(it) }
+
+        val userContent = JsonObject().apply {
+            addProperty("role", "user")
+            add("parts", JsonArray().apply {
+                add(JsonObject().apply { addProperty("text", message) })
+            })
+        }
+        contents.add(userContent)
+
+        val systemInstruction = JsonObject().apply {
+            add("parts", JsonArray().apply {
+                add(JsonObject().apply { addProperty("text", systemPrompt) })
+            })
+        }
+
+        val body = JsonObject().apply {
+            add("systemInstruction", systemInstruction)
+            add("contents", contents)
+            add("generationConfig", JsonObject().apply {
+                addProperty("temperature", 0.7)
+                addProperty("maxOutputTokens", 500)
+                // Tell Gemini to return JSON — reduces markdown wrapping
+                addProperty("responseMimeType", "application/json")
+            })
+        }
+
+        val request = Request.Builder()
+            .url("$GEMINI_URL?key=$apiKey")
+            .addHeader("Content-Type", "application/json")
+            .post(body.toString().toRequestBody("application/json".toMediaType()))
+            .build()
+
+        val response = client.newCall(request).execute()
+        val raw = response.body?.string().orEmpty()
+
+        if (!response.isSuccessful) {
+            if (response.code == 429) return raw
+            val errorMsg = try {
+                gson.fromJson(raw, JsonObject::class.java)
+                    ?.getAsJsonObject("error")
+                    ?.get("message")?.asString
+                    ?: "Error ${response.code}"
+            } catch (e: Exception) { "Error ${response.code}" }
+
+            val friendly = when (response.code) {
+                400 -> "Invalid request. Check your API key."
+                403 -> "API key rejected. Get a fresh key at: aistudio.google.com/app/apikey"
+                else -> errorMsg
+            }
+            return buildJsonChat(friendly)
+        }
+
+        return try {
+            val json = gson.fromJson(raw, JsonObject::class.java)
+            val reply = json
+                .getAsJsonArray("candidates")
+                .get(0).asJsonObject
+                .getAsJsonObject("content")
+                .getAsJsonArray("parts")
+                .get(0).asJsonObject
+                .get("text").asString
+                .trim()
+
+            val cleanReply = stripMarkdown(reply)
+            addToHistory("user", message)
+            addToHistory("model", cleanReply)
+            cleanReply
+        } catch (e: Exception) {
+            buildJsonChat("Could not read Gemini response. Please try again.")
+        }
+    }
+
+    // ========= OPENROUTER =========
+    private fun callOpenRouter(apiKey: String, message: String): String {
+        val messages = JsonArray()
+        messages.add(JsonObject().apply {
+            addProperty("role", "system")
+            addProperty("content", systemPrompt)
+        })
+        // Add history in OpenRouter format (role: user/assistant, not user/model)
+        history.forEach { historyItem ->
+            val openRouterItem = JsonObject().apply {
+                val geminiRole = historyItem.get("role")?.asString ?: "user"
+                // Gemini uses "model", OpenRouter uses "assistant" — convert
+                addProperty("role", if (geminiRole == "model") "assistant" else geminiRole)
+                val parts = historyItem.getAsJsonArray("parts")
+                val text = parts?.get(0)?.asJsonObject?.get("text")?.asString ?: ""
+                addProperty("content", text)
+            }
+            messages.add(openRouterItem)
+        }
+        messages.add(JsonObject().apply {
+            addProperty("role", "user")
+            addProperty("content", message)
+        })
+
+        val body = JsonObject().apply {
+            addProperty("model", selectedOpenRouterModel)
+            add("messages", messages)
+            addProperty("temperature", 0.7)
+            addProperty("max_tokens", 500)
+            // Request JSON response format
+            add("response_format", JsonObject().apply {
+                addProperty("type", "json_object")
+            })
+        }
+
+        val request = Request.Builder()
+            .url("https://openrouter.ai/api/v1/chat/completions")
+            .addHeader("Authorization", "Bearer $apiKey")
+            .addHeader("Content-Type", "application/json")
+            .addHeader("HTTP-Referer", "https://aria-assistant.app")
+            .addHeader("X-Title", "ARIA Android Assistant")
+            .post(body.toString().toRequestBody("application/json".toMediaType()))
+            .build()
+
+        val response = client.newCall(request).execute()
+        val raw = response.body?.string().orEmpty()
+
+        if (!response.isSuccessful) {
+            if (response.code == 429) return raw
+            return buildJsonChat("OpenRouter error ${response.code}. Try again.")
+        }
+
+        return try {
+            val json = gson.fromJson(raw, JsonObject::class.java)
+            val reply = json.getAsJsonArray("choices")
+                .get(0).asJsonObject
+                .getAsJsonObject("message")
+                .get("content").asString
+
+            val cleanReply = stripMarkdown(reply)
+            addToHistory("user", message)
+            addToHistory("model", cleanReply)  // store as "model" for consistent format
+            cleanReply
+        } catch (e: Exception) {
+            buildJsonChat("Parse error. Try again.")
+        }
+    }
+
+// ========= HELPERS =========
+
+    private fun stripMarkdown(raw: String): String {
+        var result = raw.trim()
+        if (result.startsWith("```")) {
+            result = result
+                .removePrefix("```json")
+                .removePrefix("```")
+            val endFence = result.lastIndexOf("```")
+            if (endFence >= 0) {
+                result = result.substring(0, endFence)
+            }
+            result = result.trim()
+        }
+        return result
+    }
+
+    private fun buildJsonChat(text: String): String {
+        val safe = text.replace("\"", "'")
+        return """{"type":"chat","text":"$safe"}"""
+    }
+
+    private fun addToHistory(role: String, content: String) {
+        val obj = JsonObject().apply {
+            addProperty("role", role)
+            add("parts", JsonArray().apply {
+                add(JsonObject().apply { addProperty("text", content) })
+            })
+        }
+        history.add(obj)
+        while (history.size > MAX_HISTORY * 2) {
+            history.removeAt(0)
+        }
+    }
+
+    fun clearHistory() = history.clear()
+    fun getHistorySize() = history.size / 2  // divide by 2: each turn = user + model
+    fun warmUp() { /* safe no-op */ }
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/ai/OpenRouterModels.kt">
+package com.cherinet.aria.ai
+
+/**
+ * OpenRouter model registry.
+ *
+ * OpenRouter lets you use many AI models from one API.
+ * Each model has different strengths:
+ * - Fast models: good for quick commands
+ * - Smart models: good for complex reasoning
+ * - Free models: good for testing (limited usage)
+ *
+ * Find more models at: openrouter.ai/models
+ */
+object OpenRouterModels {
+
+    // ═══ FREE MODELS (no cost, good for testing) ═══
+
+    // Google's Gemma 3 — good general purpose, free tier
+    const val GEMMA_3_4B = "google/gemma-3-4b-it:free"
+
+    // Meta's Llama 3 8B — fast and capable, free tier
+    const val LLAMA_3_8B = "meta-llama/llama-3-8b-instruct:free"
+
+    // Microsoft Phi-3 — small but surprisingly smart, free
+    const val PHI_3_MINI = "microsoft/phi-3-mini-128k-instruct:free"
+
+    // ═══ PAID MODELS (better quality, costs tokens) ═══
+
+    // Google's Gemma 3 27B — much smarter than 4B
+    const val GEMMA_3_27B = "google/gemma-3-27b-it"
+
+    // Mistral 7B — great balance of speed and quality
+    const val MISTRAL_7B = "mistralai/mistral-7b-instruct"
+
+    // Claude Haiku — fast, cheap Anthropic model
+    const val CLAUDE_HAIKU = "anthropic/claude-3-haiku"
+
+    // ═══ DEFAULTS ═══
+
+    // Used when no model is specified
+    // Change this to whatever works best for you
+    const val DEFAULT = GEMMA_3_4B
+
+    // Used for complex reasoning tasks (agent planning)
+    const val SMART = CLAUDE_HAIKU
+
+    // Used for quick, simple commands
+    const val FAST = LLAMA_3_8B
+
+    /**
+     * All available models with descriptions.
+     * Used in settings screen to let user pick a model.
+     */
+    val ALL_MODELS = listOf(
+        ModelInfo(GEMMA_3_4B, "Gemma 3 4B (Free)", "Fast, free, good for commands"),
+        ModelInfo(LLAMA_3_8B, "Llama 3 8B (Free)", "Good reasoning, free tier"),
+        ModelInfo(PHI_3_MINI, "Phi-3 Mini (Free)", "Small but smart, free"),
+        ModelInfo(GEMMA_3_27B, "Gemma 3 27B", "Smarter, costs tokens"),
+        ModelInfo(MISTRAL_7B, "Mistral 7B", "Great quality/speed balance"),
+        ModelInfo(CLAUDE_HAIKU, "Claude Haiku", "Best quality, costs tokens")
+    )
+
+    data class ModelInfo(
+        val id: String,
+        val displayName: String,
+        val description: String
+    )
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/ai/SecurityAnalyzer.kt">
+package com.cherinet.aria.ai
+
+/**
+ * Local security analysis — works OFFLINE.
+ * Checks text for suspicious patterns before sending to AI.
+ */
+class SecurityAnalyzer {
+
+    data class SecurityResult(
+        val riskLevel: RiskLevel,
+        val warnings: List<String>,
+        val isSafe: Boolean
+    )
+
+    enum class RiskLevel { SAFE, LOW, MEDIUM, HIGH, CRITICAL }
+
+    // Known phishing / scam indicators
+    private val suspiciousKeywords = listOf(
+        "verify your account", "confirm your identity",
+        "click here immediately", "your account will be suspended",
+        "act now", "limited time", "you have won",
+        "congratulations you've been selected",
+        "send your password", "social security number",
+        "bank account details", "wire transfer",
+        "nigerian prince", "inheritance fund",
+        "urgent action required", "your account has been compromised",
+        "reset your password immediately",
+        "enter your credit card", "free gift card",
+        "you are the lucky winner"
+    )
+
+    private val suspiciousDomainPatterns = listOf(
+        "bit\\.ly", "tinyurl", "t\\.co",        // URL shorteners (not always bad)
+        ".*login.*\\.(?!com|org|gov).*",          // Fake login pages
+        ".*paypal.*\\.(?!com).*",                 // Fake PayPal
+        ".*google.*\\.(?!com|co\\.).*",           // Fake Google
+        ".*apple.*\\.(?!com).*",                  // Fake Apple
+        ".*microsoft.*\\.(?!com).*",              // Fake Microsoft
+        ".*amazon.*\\.(?!com|co\\.).*",           // Fake Amazon
+        "\\.ru$", "\\.cn$", "\\.tk$", "\\.xyz$"   // Risky TLDs
+    )
+
+    private val urlRegex = Regex(
+        """https?://[^\s<>"{}|\\^`\[\]]+""",
+        RegexOption.IGNORE_CASE
+    )
+
+    fun analyzeText(text: String): SecurityResult {
+        val warnings = mutableListOf<String>()
+        val lowerText = text.lowercase()
+
+        // Check for suspicious keywords
+        for (keyword in suspiciousKeywords) {
+            if (lowerText.contains(keyword)) {
+                warnings.add("🚨 Suspicious phrase detected: \"$keyword\"")
+            }
+        }
+
+        // Check for URLs and analyze them
+        val urls = urlRegex.findAll(text)
+        for (urlMatch in urls) {
+            val url = urlMatch.value.lowercase()
+            warnings.addAll(analyzeUrl(url))
+        }
+
+        // Check for urgency manipulation
+        val urgencyWords = listOf(
+            "urgent", "immediately", "right now",
+            "expires", "last chance", "hurry"
+        )
+        val urgencyCount = urgencyWords.count { lowerText.contains(it) }
+        if (urgencyCount >= 2) {
+            warnings.add("⚠️ Multiple urgency tactics detected — " +
+                    "common in scam messages")
+        }
+
+        // Check for requests for personal info
+        val infoRequests = listOf(
+            "password", "ssn", "social security",
+            "credit card", "bank account", "pin number",
+            "routing number", "cvv"
+        )
+        for (term in infoRequests) {
+            if (lowerText.contains(term)) {
+                warnings.add("🚨 Requests sensitive information: \"$term\"")
+            }
+        }
+
+        // Determine risk level
+        val riskLevel = when {
+            warnings.any { it.startsWith("🚨") } -> RiskLevel.HIGH
+            warnings.size >= 3 -> RiskLevel.HIGH
+            warnings.size >= 2 -> RiskLevel.MEDIUM
+            warnings.size == 1 -> RiskLevel.LOW
+            else -> RiskLevel.SAFE
+        }
+
+        return SecurityResult(
+            riskLevel = riskLevel,
+            warnings = warnings,
+            isSafe = riskLevel == RiskLevel.SAFE
+        )
+    }
+
+    private fun analyzeUrl(url: String): List<String> {
+        val warnings = mutableListOf<String>()
+
+        // Check for IP-based URLs (often phishing)
+        if (Regex("""https?://\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}""")
+                .containsMatchIn(url)) {
+            warnings.add("🚨 URL uses IP address instead of domain — " +
+                    "likely phishing: $url")
+        }
+
+        // Check for suspicious domain patterns
+        for (pattern in suspiciousDomainPatterns) {
+            if (Regex(pattern, RegexOption.IGNORE_CASE).containsMatchIn(url)) {
+                warnings.add("⚠️ Suspicious URL pattern detected: $url")
+                break
+            }
+        }
+
+        // Check for excessive subdomains (phishing trick)
+        val domainPart = url
+            .removePrefix("https://")
+            .removePrefix("http://")
+            .split("/")[0]
+        if (domainPart.count { it == '.' } > 3) {
+            warnings.add("⚠️ URL has many subdomains — possible " +
+                    "spoofing: $url")
+        }
+
+        return warnings
+    }
+
+    fun getQuickVerdict(result: SecurityResult): String {
+        return when (result.riskLevel) {
+            RiskLevel.SAFE -> "✅ This appears safe. No threats detected."
+            RiskLevel.LOW -> "⚠️ Minor concern detected. Proceed with caution."
+            RiskLevel.MEDIUM -> "⚠️ Several warning signs found. Be careful!"
+            RiskLevel.HIGH -> "🚨 HIGH RISK! Multiple danger signs detected. " +
+                    "Do NOT interact with this content!"
+            RiskLevel.CRITICAL -> "🚨 CRITICAL THREAT! This is almost " +
+                    "certainly a scam or phishing attempt!"
+        }
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/automation/ActionRouter.kt">
+package com.cherinet.aria.automation
+
+import android.content.Context
+import com.cherinet.aria.ai.AiManager
+import org.json.JSONObject
+
+/**
+ * ActionRouter: Takes the AI's JSON response and executes the right action.
+ *
+ * Think of this like a post office:
+ * - The AI writes a letter (JSON response)
+ * - ActionRouter reads the address (action type)
+ * - And delivers it to the right handler (AppController function)
+ *
+ * What changed from before:
+ * - Now returns BOTH the spoken response AND the action result
+ * - Handles the new "spoken" field in AI responses
+ * - Better error messages
+ */
+class ActionRouter(
+    private val context: Context,
+    private val appController: AppController
+) {
+
+    data class RouteResult(
+        val spokenText: String,    // What ARIA says out loud
+        val displayText: String,   // What shows in the chat
+        val actionExecuted: Boolean = false,
+        val actionType: String = ""
+    )
+
+    suspend fun handle(
+        input: String,
+        aiManager: AiManager
+    ): RouteResult {
+
+        val rawResponse = aiManager.sendMessage(input)
+
+        return try {
+            val json = JSONObject(rawResponse)
+
+            when (json.getString("type")) {
+
+                "chat" -> {
+                    val text = json.getString("text")
+                    RouteResult(spokenText = text, displayText = text)
+                }
+
+                "action" -> {
+                    // Get what ARIA wants to say while doing the action
+                    val spoken = json.optString("spoken", "")
+                    val actions = json.getJSONArray("actions")
+                    val resultLines = mutableListOf<String>()
+
+                    for (i in 0 until actions.length()) {
+                        val action = actions.getJSONObject(i)
+                        val tool = action.getString("tool")
+                        val value = action.optString("value", "")
+                        resultLines.add(execute(tool, value))
+                    }
+
+                    val actionResult = resultLines.joinToString("\n")
+
+                    // If AI gave a spoken response, use that. Otherwise use action result.
+                    val finalSpoken = spoken.ifBlank { actionResult }
+
+                    RouteResult(
+                        spokenText = finalSpoken,
+                        displayText = actionResult,
+                        actionExecuted = true,
+                        actionType = if (actions.length() > 0)
+                            actions.getJSONObject(0).optString("tool") else ""
+                    )
+                }
+
+                "security" -> {
+                    val text = json.optString("text", "Security analysis complete.")
+                    val verdict = json.optString("verdict", "unknown")
+                    val icon = when (verdict) {
+                        "safe" -> "✅"
+                        "warning" -> "⚠️"
+                        "danger" -> "🚨"
+                        else -> "🔍"
+                    }
+                    val display = "$icon $text"
+                    RouteResult(spokenText = text, displayText = display)
+                }
+
+                else -> {
+                    RouteResult(
+                        spokenText = "I got an unexpected response. Please try again.",
+                        displayText = "⚠️ Unknown response format"
+                    )
+                }
+            }
+
+        } catch (e: Exception) {
+            // If JSON parsing fails, the AI returned plain text
+            // Just show it as a chat message
+            RouteResult(
+                spokenText = rawResponse,
+                displayText = rawResponse
+            )
+        }
+    }
+
+    private fun execute(tool: String, value: String): String {
+        return when (tool) {
+
+            "open_app" -> {
+                if (appController.openApp(value)) "✅ Opening $value!"
+                else "❌ Couldn't find \"$value\". Is it installed?"
+            }
+
+            "search" -> {
+                appController.search(value)
+                "🔍 Searching for: $value"
+            }
+
+            "call" -> {
+                // Note: ChatActivity handles contact lookup before reaching here
+                // for voice commands. This handles AI-routed calls.
+                appController.makeCall(value)
+                "📞 Calling $value..."
+            }
+
+            "sms" -> {
+                appController.sendSms(value)
+                "✉️ Opening message to $value..."
+            }
+
+            "alarm" -> {
+                // Value is like "7:00am" or "14:30"
+                "⏰ Opening alarm app to set $value"
+                // Note: detailed alarm parsing stays in ChatActivity for now
+                // Phase 2 will move it here
+            }
+
+            "timer" -> {
+                "⏱️ Setting timer for $value"
+            }
+
+            "settings" -> {
+                appController.openSettings()
+                "⚙️ Opening settings"
+            }
+
+            "open_url" -> {
+                appController.openUrl(value)
+                "🌐 Opening $value"
+            }
+
+            else -> "⚠️ I don't know how to do: $tool"
+        }
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/automation/AppController.kt">
+package com.cherinet.aria.automation
+
+import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import android.provider.Settings
+
+class AppController(private val context: Context) {
+
+    data class AppInfo(
+        val name: String,
+        val packageName: String,
+        val intent: Intent
+    )
+
+    /**
+     * MAIN FUNCTION
+     */
+    fun openApp(appName: String): Boolean {
+        val apps = getLaunchableApps()
+        val match = findBestMatch(appName, apps)
+
+        return if (match != null) {
+            context.startActivity(match.intent)
+            true
+        } else {
+            false
+        }
+    }
+
+    /**
+     * STEP 1: GET ONLY LAUNCHABLE APPS (CRITICAL FIX)
+     */
+    private fun getLaunchableApps(): List<AppInfo> {
+        val pm = context.packageManager
+
+        val intent = Intent(Intent.ACTION_MAIN, null).apply {
+            addCategory(Intent.CATEGORY_LAUNCHER)
+        }
+
+        val resolveInfos = pm.queryIntentActivities(intent, 0)
+
+        return resolveInfos.mapNotNull { resolveInfo ->
+            try {
+                val label = resolveInfo.loadLabel(pm).toString()
+                val packageName = resolveInfo.activityInfo.packageName
+                val launchIntent = pm.getLaunchIntentForPackage(packageName)
+
+                if (launchIntent != null) {
+                    launchIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    AppInfo(label, packageName, launchIntent)
+                } else null
+            } catch (e: Exception) {
+                null
+            }
+        }
+    }
+
+    /**
+     * STEP 2: SMART MATCHING (THIS FIXES YOUR ISSUE)
+     */
+    private fun findBestMatch(
+        query: String,
+        apps: List<AppInfo>
+    ): AppInfo? {
+
+        val normalizedQuery = normalize(query)
+
+        // 1. EXACT MATCH
+        apps.firstOrNull {
+            normalize(it.name) == normalizedQuery
+        }?.let { return it }
+
+        // 2. STARTS WITH
+        apps.firstOrNull {
+            normalize(it.name).startsWith(normalizedQuery)
+        }?.let { return it }
+
+        // 3. CONTAINS
+        apps.firstOrNull {
+            normalize(it.name).contains(normalizedQuery)
+        }?.let { return it }
+
+        // 4. PACKAGE NAME MATCH
+        apps.firstOrNull {
+            it.packageName.lowercase().contains(normalizedQuery)
+        }?.let { return it }
+
+        // 5. FUZZY MATCH (fallback)
+        val scored = apps.map { app ->
+            val score = similarity(normalizedQuery, normalize(app.name))
+            app to score
+        }
+
+        return scored
+            .maxByOrNull { it.second }
+            ?.takeIf { it.second > 0.4 }   // threshold
+            ?.first
+    }
+
+    /**
+     * NORMALIZATION (important)
+     */
+    private fun normalize(text: String): String {
+        return text.lowercase()
+            .replace("[^a-z0-9]".toRegex(), "")
+            .trim()
+    }
+
+    /**
+     * SIMPLE SIMILARITY (LEVENSHTEIN-BASED)
+     */
+    private fun similarity(a: String, b: String): Double {
+        val longer = if (a.length > b.length) a else b
+        val shorter = if (a.length > b.length) b else a
+
+        if (longer.isEmpty()) return 1.0
+
+        val distance = levenshtein(longer, shorter)
+        return (longer.length - distance).toDouble() / longer.length
+    }
+
+    private fun levenshtein(s1: String, s2: String): Int {
+        val costs = IntArray(s2.length + 1) { it }
+
+        for (i in 1..s1.length) {
+            var last = i
+            for (j in 1..s2.length) {
+                val newVal = if (s1[i - 1] == s2[j - 1]) {
+                    costs[j - 1]
+                } else {
+                    1 + minOf(costs[j - 1], last, costs[j])
+                }
+                costs[j - 1] = last
+                last = newVal
+            }
+            costs[s2.length] = last
+        }
+
+        return costs[s2.length]
+    }
+
+    // ==========================
+    // OTHER FUNCTIONS (UNCHANGED)
+    // ==========================
+
+    fun makeCall(phoneNumber: String) {
+        val intent = Intent(Intent.ACTION_CALL).apply {
+            data = Uri.parse("tel:$phoneNumber")
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        }
+        try {
+            context.startActivity(intent)
+        } catch (e: SecurityException) {
+            val dialIntent = Intent(Intent.ACTION_DIAL).apply {
+                data = Uri.parse("tel:$phoneNumber")
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            }
+            context.startActivity(dialIntent)
+        }
+    }
+
+    fun sendSms(phoneNumber: String, message: String = "") {
+        val intent = Intent(Intent.ACTION_SENDTO).apply {
+            data = Uri.parse("smsto:$phoneNumber")
+            putExtra("sms_body", message)
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        }
+        context.startActivity(intent)
+    }
+
+    fun openUrl(url: String) {
+        val fullUrl =
+            if (!url.startsWith("http")) "https://$url" else url
+
+        val intent = Intent(Intent.ACTION_VIEW).apply {
+            data = Uri.parse(fullUrl)
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        }
+        context.startActivity(intent)
+    }
+
+    fun openSettings() {
+        val intent = Intent(Settings.ACTION_SETTINGS).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        }
+        context.startActivity(intent)
+    }
+
+    fun search(query: String) {
+        val intent = Intent(Intent.ACTION_WEB_SEARCH).apply {
+            putExtra("query", query)
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        }
+        context.startActivity(intent)
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/automation/ContactsHelper.kt">
+package com.cherinet.aria.automation
+
+import android.content.Context
+import android.provider.ContactsContract
+
+data class ContactInfo(
+    val name: String,
+    val phoneNumber: String
+)
+
+class ContactsHelper(private val context: Context) {
+
+    /**
+     * Find a contact by partial name match.
+     * Returns the first match, or null.
+     */
+    fun findContact(query: String): ContactInfo? {
+        val contacts = searchContacts(query)
+        return contacts.firstOrNull()
+    }
+
+    fun searchContacts(query: String): List<ContactInfo> {
+        val results = mutableListOf<ContactInfo>()
+
+        try {
+            val cursor = context.contentResolver.query(
+                ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+                arrayOf(
+                    ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME,
+                    ContactsContract.CommonDataKinds.Phone.NUMBER
+                ),
+                "${ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME} " +
+                        "LIKE ?",
+                arrayOf("%$query%"),
+                ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME + " ASC"
+            )
+
+            cursor?.use {
+                while (it.moveToNext()) {
+                    val name = it.getString(0) ?: continue
+                    val number = it.getString(1) ?: continue
+                    results.add(ContactInfo(name, number))
+                }
+            }
+        } catch (e: SecurityException) {
+            // Contacts permission not granted
+        }
+
+        return results
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/MainActivity.kt">
+package com.cherinet.aria
+
+import android.Manifest
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
+import android.os.Build
+import android.os.Bundle
+import android.provider.Settings
+import android.widget.Toast
+import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import com.cherinet.aria.databinding.ActivityMainBinding
+import com.cherinet.aria.service.FloatingButtonService
+import com.cherinet.aria.service.ScreenReaderService
+import com.cherinet.aria.service.WakeWordService
+import com.cherinet.aria.ui.ChatActivity
+import com.cherinet.aria.ai.AiManager
+import com.cherinet.aria.databinding.ActivityMainBinding
+import com.cherinet.aria.ui.ChatActivity
+
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
+    companion object {
+        private const val OVERLAY_PERMISSION_CODE = 1000
+        private const val RUNTIME_PERMISSION_CODE = 1001
+    }
+
+    @RequiresApi(Build.VERSION_CODES.M)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        loadSavedApiKey()
+        setupButtons()
+        updateStatus()
+
+        // FIX: Only start WakeWordService if RECORD_AUDIO permission is already granted.
+        // Starting it unconditionally causes a crash on first install before permissions
+        // are granted, because the foreground service requires the microphone permission.
+        if (ActivityCompat.checkSelfPermission(
+                this, Manifest.permission.RECORD_AUDIO
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            startWakeWordService()
+        }
+    }
+
+    private fun startWakeWordService() {
+        if (!WakeWordService.isRunning) {
+            val intent = Intent(this, WakeWordService::class.java)
+            try {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    startForegroundService(intent)
+                } else {
+                    startService(intent)
+                }
+            } catch (_: Exception) {
+                Toast.makeText(
+                    this,
+                    "Wake word will start after permissions granted",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.M)
+    override fun onResume() {
+        super.onResume()
+        if (::binding.isInitialized) {
+            updateStatus()
+        }
+    }
+
+    private fun loadSavedApiKey() {
+        val aiManager = com.cherinet.aria.ai.AiManager.getInstance(this)
+        val savedKey = aiManager.getApiKey()
+        if (savedKey.isNotBlank()) {
+            // Show only last 8 chars for security — don't show full key on screen
+            val masked = "..." + savedKey.takeLast(8)
+            binding.etApiKey.setText(masked)
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.M)
+    private fun setupButtons() {
+
+        // Save API Key
+        binding.btnSaveKey.setOnClickListener {
+            val key = binding.etApiKey.text.toString().trim()
+            if (key.isBlank() || key.startsWith("...")) {
+                Toast.makeText(this, "Enter your API key", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            val aiManager = AiManager.getInstance(this)
+            aiManager.saveApiKey(key)
+            Toast.makeText(this, "✅ API key saved securely!", Toast.LENGTH_SHORT).show()
+            updateStatus()
+        }
+
+        // Overlay Permission
+        binding.btnOverlayPerm.setOnClickListener {
+            if (!Settings.canDrawOverlays(this)) {
+                val intent = Intent(
+                    Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                    Uri.parse("package:$packageName")
+                )
+                startActivityForResult(
+                    intent,
+                    OVERLAY_PERMISSION_CODE
+                )
+            } else {
+                Toast.makeText(
+                    this,
+                    "✅ Already granted",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
+
+        // Accessibility Permission
+        binding.btnAccessibilityPerm.setOnClickListener {
+            if (!ScreenReaderService.isServiceActive) {
+                Toast.makeText(
+                    this,
+                    "Find 'ARIA' in the list and enable it",
+                    Toast.LENGTH_LONG
+                ).show()
+                startActivity(
+                    Intent(
+                        Settings.ACTION_ACCESSIBILITY_SETTINGS
+                    )
+                )
+            } else {
+                Toast.makeText(
+                    this,
+                    "✅ Already enabled",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
+
+        // Runtime Permissions
+        binding.btnRuntimePerms.setOnClickListener {
+            val perms = mutableListOf(
+                Manifest.permission.RECORD_AUDIO,
+                Manifest.permission.READ_CONTACTS,
+                Manifest.permission.CALL_PHONE,
+                Manifest.permission.SEND_SMS
+            )
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                perms.add(Manifest.permission.POST_NOTIFICATIONS)
+            }
+            ActivityCompat.requestPermissions(
+                this,
+                perms.toTypedArray(),
+                RUNTIME_PERMISSION_CODE
+            )
+        }
+
+        // Start ARIA
+        binding.btnStart.setOnClickListener {
+            if (!Settings.canDrawOverlays(this)) {
+                Toast.makeText(
+                    this,
+                    "⚠️ Grant overlay permission first",
+                    Toast.LENGTH_LONG
+                ).show()
+                return@setOnClickListener
+            }
+
+            val apiKey = getSharedPreferences(
+                "aria_prefs", MODE_PRIVATE
+            ).getString("api_key", "") ?: ""
+
+            if (apiKey.isBlank()) {
+                Toast.makeText(
+                    this,
+                    "⚠️ Enter your API key first",
+                    Toast.LENGTH_LONG
+                ).show()
+                return@setOnClickListener
+            }
+
+            startAriaService()
+
+            Toast.makeText(
+                this,
+                "🚀 ARIA is now active!",
+                Toast.LENGTH_LONG
+            ).show()
+
+            startActivity(
+                Intent(this, ChatActivity::class.java)
+            )
+        }
+
+        // Stop ARIA
+        binding.btnStop.setOnClickListener {
+            stopService(
+                Intent(this, FloatingButtonService::class.java)
+            )
+            stopService(
+                Intent(this, WakeWordService::class.java)
+            )
+            Toast.makeText(
+                this,
+                "ARIA stopped",
+                Toast.LENGTH_SHORT
+            ).show()
+            updateStatus()
+        }
+    }
+
+    private fun startAriaService() {
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                startForegroundService(
+                    Intent(this, FloatingButtonService::class.java)
+                )
+            } else {
+                startService(
+                    Intent(this, FloatingButtonService::class.java)
+                )
+            }
+        } catch (e: Exception) {
+            Toast.makeText(
+                this,
+                "Error starting floating button: ${e.message}",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+
+        // FIX: Only start WakeWordService if RECORD_AUDIO is granted
+        if (ActivityCompat.checkSelfPermission(
+                this, Manifest.permission.RECORD_AUDIO
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            startWakeWordService()
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.M)
+    private fun updateStatus() {
+        if (!::binding.isInitialized) return
+
+        val apiKeySet = getSharedPreferences(
+            "aria_prefs", MODE_PRIVATE
+        ).getString("api_key", "")?.isNotBlank() == true
+
+        val overlayOk = Settings.canDrawOverlays(this)
+        val accessibilityOk = ScreenReaderService.isServiceActive
+        val serviceRunning = FloatingButtonService.isRunning
+        val wakeWordRunning = WakeWordService.isRunning
+
+        val status = buildString {
+            appendLine("Status Dashboard:")
+            appendLine(
+                "  API Key:       " +
+                        if (apiKeySet) "✅ Set" else "❌ Not set"
+            )
+            appendLine(
+                "  Overlay:       " +
+                        if (overlayOk) "✅ Granted" else "❌ Needed"
+            )
+            appendLine(
+                "  Accessibility: " +
+                        if (accessibilityOk) "✅ Active" else "⚠️ Disabled"
+            )
+            appendLine(
+                "  Service:       " +
+                        if (serviceRunning) "🟢 Running" else "🔴 Stopped"
+            )
+            appendLine(
+                "  Wake Word:     " +
+                        if (wakeWordRunning) "🟢 Active" else "🔴 Off"
+            )
+        }
+
+        binding.tvStatus.text = status
+    }
+
+    @RequiresApi(Build.VERSION_CODES.M)
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(
+            requestCode,
+            permissions,
+            grantResults
+        )
+        if (requestCode == RUNTIME_PERMISSION_CODE) {
+            val allGranted = grantResults.all {
+                it == PackageManager.PERMISSION_GRANTED
+            }
+            Toast.makeText(
+                this,
+                if (allGranted) "✅ All permissions granted!"
+                else "Some permissions denied",
+                Toast.LENGTH_SHORT
+            ).show()
+            updateStatus()
+
+            // FIX: Start wake word service now that permissions may be granted
+            if (ActivityCompat.checkSelfPermission(
+                    this, Manifest.permission.RECORD_AUDIO
+                ) == PackageManager.PERMISSION_GRANTED
+            ) {
+                startWakeWordService()
+            }
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.M)
+    @Deprecated("Use Activity Result API")
+    override fun onActivityResult(
+        requestCode: Int,
+        resultCode: Int,
+        data: Intent?
+    ) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == OVERLAY_PERMISSION_CODE) {
+            updateStatus()
+        }
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/model/ChatMessage.kt">
+package com.cherinet.aria.model
+
+data class ChatMessage(
+    val content: String,
+    val isUser: Boolean,
+    val timestamp: Long = System.currentTimeMillis()
+)
+
+// Simple in-memory storage — survives activity restarts
+object ChatRepository {
+    val messages = mutableListOf<ChatMessage>()
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/services/FloatingButtonService.kt">
+package com.cherinet.aria.service
+
+import android.app.*
+import android.content.Intent
+import android.graphics.PixelFormat
+import android.os.Build
+import android.os.IBinder
+import android.provider.Settings
+import android.view.*
+import android.view.animation.OvershootInterpolator
+import com.cherinet.aria.MainActivity
+import com.cherinet.aria.R
+import com.cherinet.aria.ui.ChatActivity
+import kotlin.math.abs
+
+class FloatingButtonService : Service() {
+
+    companion object {
+        const val CHANNEL_ID = "aria_foreground_channel"
+        const val NOTIFICATION_ID = 1001
+        var isRunning = false
+            private set
+    }
+
+    private lateinit var windowManager: WindowManager
+    private var floatingView: View? = null
+    private lateinit var params: WindowManager.LayoutParams
+
+    private var initialX = 0
+    private var initialY = 0
+    private var initialTouchX = 0f
+    private var initialTouchY = 0f
+
+    override fun onBind(intent: Intent?): IBinder? = null
+
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+
+        isRunning = true
+
+        startForeground(NOTIFICATION_ID, createNotification())
+
+        // 🔥 SAFETY CHECK (CRITICAL FIX)
+        if (!Settings.canDrawOverlays(this)) {
+            stopSelf()
+            return START_NOT_STICKY
+        }
+
+        if (floatingView == null) {
+            setupFloatingButton()
+        }
+
+        return START_STICKY
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        createNotificationChannel()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        isRunning = false
+
+        try {
+            floatingView?.let {
+                windowManager.removeView(it)
+            }
+        } catch (_: Exception) {}
+
+        floatingView = null
+    }
+
+    private fun createNotificationChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val channel = NotificationChannel(
+                CHANNEL_ID,
+                "ARIA Service",
+                NotificationManager.IMPORTANCE_LOW
+            )
+            getSystemService(NotificationManager::class.java)
+                .createNotificationChannel(channel)
+        }
+    }
+
+    private fun createNotification(): Notification {
+        val intent = Intent(this, MainActivity::class.java)
+
+        val pendingIntent = PendingIntent.getActivity(
+            this,
+            0,
+            intent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
+
+        return Notification.Builder(this, CHANNEL_ID)
+            .setContentTitle("ARIA is active")
+            .setContentText("Tap floating button to chat")
+            .setSmallIcon(R.drawable.ic_assistant)
+            .setContentIntent(pendingIntent)
+            .setOngoing(true)
+            .build()
+    }
+
+    private fun setupFloatingButton() {
+        windowManager = getSystemService(WINDOW_SERVICE) as WindowManager
+
+        val view = LayoutInflater.from(this)
+            .inflate(R.layout.layout_floating_button, null)
+
+        floatingView = view
+
+        params = WindowManager.LayoutParams(
+            WindowManager.LayoutParams.WRAP_CONTENT,
+            WindowManager.LayoutParams.WRAP_CONTENT,
+            WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
+            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE or
+                    WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
+            PixelFormat.TRANSLUCENT
+        ).apply {
+            gravity = Gravity.TOP or Gravity.START
+            x = 0
+            y = 300
+        }
+
+        try {
+            windowManager.addView(view, params)
+        } catch (e: Exception) {
+            stopSelf()
+            return
+        }
+
+        view.scaleX = 0f
+        view.scaleY = 0f
+        view.animate()
+            .scaleX(1f)
+            .scaleY(1f)
+            .setDuration(400)
+            .setInterpolator(OvershootInterpolator())
+            .start()
+
+        setupTouch(view)
+    }
+
+    private fun setupTouch(view: View) {
+        view.setOnTouchListener { v, event ->
+            when (event.action) {
+
+                MotionEvent.ACTION_DOWN -> {
+                    initialX = params.x
+                    initialY = params.y
+                    initialTouchX = event.rawX
+                    initialTouchY = event.rawY
+
+                    v.animate().scaleX(0.9f).scaleY(0.9f).setDuration(100).start()
+                    true
+                }
+
+                MotionEvent.ACTION_MOVE -> {
+                    params.x = initialX + (event.rawX - initialTouchX).toInt()
+                    params.y = initialY + (event.rawY - initialTouchY).toInt()
+
+                    try {
+                        windowManager.updateViewLayout(view, params)
+                    } catch (_: Exception) {}
+
+                    true
+                }
+
+                MotionEvent.ACTION_UP -> {
+                    v.animate().scaleX(1f).scaleY(1f).setDuration(100).start()
+
+                    val dx = abs(event.rawX - initialTouchX)
+                    val dy = abs(event.rawY - initialTouchY)
+
+                    if (dx < 10 && dy < 10) {
+                        openChat()
+                    } else {
+                        snapToEdge(view)
+                    }
+
+                    true
+                }
+
+                else -> false
+            }
+        }
+    }
+
+    private fun snapToEdge(view: View) {
+        val screenWidth = resources.displayMetrics.widthPixels
+        val middle = screenWidth / 2
+
+        val targetX = if (params.x < middle) 0 else screenWidth - view.width
+        val startX = params.x
+
+        view.animate()
+            .setDuration(200)
+            .setUpdateListener {
+                val fraction = it.animatedFraction
+                params.x = (startX + (targetX - startX) * fraction).toInt()
+
+                try {
+                    windowManager.updateViewLayout(view, params)
+                } catch (_: Exception) {}
+            }
+            .start()
+    }
+
+    private fun openChat() {
+        val intent = Intent(this, ChatActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        }
+        startActivity(intent)
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/services/NotificationReaderService.kt">
+package com.cherinet.aria.service
+
+import android.service.notification.NotificationListenerService
+import android.service.notification.StatusBarNotification
+import com.cherinet.aria.ai.SecurityAnalyzer
+
+class NotificationReaderService : NotificationListenerService() {
+
+    companion object {
+        // Store recent notifications for ARIA to read
+        val recentNotifications =
+            mutableListOf<String>()
+        private const val MAX_NOTIFICATIONS = 20
+        var isActive = false
+            private set
+    }
+
+    private val securityAnalyzer = SecurityAnalyzer()
+
+    override fun onListenerConnected() {
+        super.onListenerConnected()
+        isActive = true
+    }
+
+    override fun onListenerDisconnected() {
+        super.onListenerDisconnected()
+        isActive = false
+    }
+
+    override fun onNotificationPosted(
+        sbn: StatusBarNotification?
+    ) {
+        sbn ?: return
+
+        // Skip our own app notifications
+        if (sbn.packageName ==
+            "com.cherinet.aria"
+        ) return
+
+        val extras = sbn.notification.extras
+        val title = extras.getString(
+            android.app.Notification.EXTRA_TITLE
+        ) ?: ""
+        val text = extras.getCharSequence(
+            android.app.Notification.EXTRA_TEXT
+        )?.toString() ?: ""
+
+        if (title.isBlank() && text.isBlank()) return
+
+        val notifText = "From: ${sbn.packageName}\n" +
+                "Title: $title\n" +
+                "Message: $text"
+
+        // Store it
+        recentNotifications.add(0, notifText)
+        if (recentNotifications.size > MAX_NOTIFICATIONS) {
+            recentNotifications.removeAt(
+                recentNotifications.size - 1
+            )
+        }
+
+        // AUTO SCAN for scams
+        val combined = "$title $text"
+        val result = securityAnalyzer.analyzeText(combined)
+
+        if (!result.isSafe) {
+            // Show a system notification warning
+            showSecurityAlert(title)
+        }
+    }
+
+    private fun showSecurityAlert(
+        originalTitle: String
+    ) {
+        // Create warning notification
+        val notifManager = getSystemService(
+            NOTIFICATION_SERVICE
+        ) as android.app.NotificationManager
+
+        val channel = android.app.NotificationChannel(
+            "aria_security",
+            "ARIA Security Alerts",
+            android.app.NotificationManager.IMPORTANCE_HIGH
+        )
+        notifManager.createNotificationChannel(channel)
+
+        val notification =
+            android.app.Notification.Builder(
+                this, "aria_security"
+            )
+                .setContentTitle(
+                    "🚨 ARIA Security Alert"
+                )
+                .setContentText(
+                    "Suspicious notification from: " +
+                            "$originalTitle — Tap ARIA to check"
+                )
+                .setSmallIcon(
+                    android.R.drawable.ic_dialog_alert
+                )
+                .setAutoCancel(true)
+                .build()
+
+        notifManager.notify(
+            System.currentTimeMillis().toInt(),
+            notification
+        )
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/services/ScreenReaderService.kt">
+package com.cherinet.aria.service
+
+import android.accessibilityservice.AccessibilityService
+import android.view.accessibility.AccessibilityEvent
+import android.view.accessibility.AccessibilityNodeInfo
+
+class ScreenReaderService : AccessibilityService() {
+
+    companion object {
+        var lastCapturedText: String = ""
+            private set
+        var lastPackageName: String = ""
+            private set
+        var isServiceActive: Boolean = false
+            private set
+
+        fun getScreenContent(): String {
+            return if (isServiceActive && lastCapturedText.isNotBlank()) {
+                "App: $lastPackageName\n\nContent:\n$lastCapturedText"
+            } else ""
+        }
+    }
+
+    override fun onServiceConnected() {
+        isServiceActive = true
+    }
+
+    override fun onAccessibilityEvent(event: AccessibilityEvent?) {
+
+        // 🔥 1. FILTER FIRST (MOST IMPORTANT)
+        if (event?.eventType != AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED &&
+            event?.eventType != AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED
+        ) return
+
+        // 🔥 2. GET SOURCE (prefer event.source)
+        val source = event.source ?: rootInActiveWindow ?: return
+
+        // 🔥 3. IGNORE OUR OWN APP
+        val pkg = event.packageName?.toString() ?: return
+        if (pkg == packageName) return
+
+        lastPackageName = pkg
+
+        // 🔥 4. EXTRACT TEXT
+        val builder = StringBuilder()
+        extractText(source, builder, 0)
+
+        val text = builder.toString().trim()
+        if (text.length > 15) {
+            lastCapturedText = text.take(5000)
+        }
+    }
+
+    private fun extractText(
+        node: AccessibilityNodeInfo?,
+        builder: StringBuilder,
+        depth: Int
+    ) {
+        if (node == null || depth > 12) return
+
+        val text = node.text?.toString()
+        val desc = node.contentDescription?.toString()
+
+        if (!text.isNullOrBlank()) builder.appendLine(text)
+        else if (!desc.isNullOrBlank()) builder.appendLine(desc)
+
+        for (i in 0 until node.childCount) {
+            extractText(node.getChild(i), builder, depth + 1)
+        }
+    }
+
+    override fun onInterrupt() {
+        isServiceActive = false
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        isServiceActive = false
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/services/WakeWordService.kt">
+package com.cherinet.aria.service
+
+import android.app.*
+import android.content.Intent
+import android.os.*
+import android.speech.*
+import androidx.annotation.RequiresApi
+import com.cherinet.aria.ui.ChatActivity
+import java.util.Locale
+
+class WakeWordService : Service() {
+
+    private var speechRecognizer: SpeechRecognizer? = null
+    private var isListening = false
+    private val handler = Handler(Looper.getMainLooper())
+    private var retryCount = 0
+
+    companion object {
+        var isRunning = false
+            private set
+        var isPaused = false
+
+        private const val WAKE_WORD = "hey aria"
+        private const val WAKE_WORD_2 = "hey area"
+        private const val WAKE_WORD_3 = "aria"
+        private const val WAKE_WORD_4 = "hey ria"
+
+        private const val CHANNEL_ID = "wake_word_channel"
+
+        // FIX: Use a different notification ID from FloatingButtonService (which uses 1001)
+        private const val NOTIFICATION_ID = 1002
+    }
+
+    override fun onBind(intent: Intent?): IBinder? = null
+
+    @RequiresApi(Build.VERSION_CODES.ECLAIR)
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        isRunning = true
+        startForeground(NOTIFICATION_ID, createNotification())
+
+        handler.postDelayed({
+            if (isRunning) startWakeWordListener()
+        }, 3000)
+
+        return START_STICKY
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        createChannel()
+    }
+
+    @RequiresApi(Build.VERSION_CODES.FROYO)
+    override fun onDestroy() {
+        super.onDestroy()
+        isRunning = false
+        handler.removeCallbacksAndMessages(null)
+        destroyRecognizer()
+    }
+
+    private fun createChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val channel = NotificationChannel(
+                CHANNEL_ID,
+                "Wake Word Service",
+                NotificationManager.IMPORTANCE_LOW
+            )
+            getSystemService(NotificationManager::class.java)
+                .createNotificationChannel(channel)
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    private fun createNotification(): Notification {
+        return Notification.Builder(this, CHANNEL_ID)
+            .setContentTitle("ARIA Active")
+            .setContentText("Listening for wake word...")
+            .setSmallIcon(android.R.drawable.ic_btn_speak_now)
+            .build()
+    }
+
+    @RequiresApi(Build.VERSION_CODES.FROYO)
+    private fun startWakeWordListener() {
+        if (!SpeechRecognizer.isRecognitionAvailable(this)) return
+        createRecognizer()
+        scheduleListening(1500)
+    }
+
+    @RequiresApi(Build.VERSION_CODES.FROYO)
+    private fun createRecognizer() {
+        destroyRecognizer()
+        speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this)
+        speechRecognizer?.setRecognitionListener(createListener())
+    }
+
+    @RequiresApi(Build.VERSION_CODES.FROYO)
+    private fun scheduleListening(delayMs: Long) {
+        handler.postDelayed({
+            if (isRunning && !isPaused && !isListening) {
+                beginListening()
+            }
+        }, delayMs)
+    }
+
+    @RequiresApi(Build.VERSION_CODES.FROYO)
+    private fun beginListening() {
+        if (!isRunning || isPaused || isListening) return
+
+        val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.US)
+            putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 3)
+        }
+
+        try {
+            speechRecognizer?.startListening(intent)
+            isListening = true
+            retryCount = 0
+        } catch (e: Exception) {
+            isListening = false
+            retryCount++
+            scheduleListening((2000L * retryCount).coerceAtMost(15000L))
+        }
+    }
+
+    private fun createListener() = @RequiresApi(Build.VERSION_CODES.FROYO)
+    object : RecognitionListener {
+
+        override fun onResults(results: Bundle?) {
+            isListening = false
+
+            val matches = results
+                ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+                ?: return
+
+            for (heard in matches) {
+                val lower = heard.lowercase()
+                if (lower.contains(WAKE_WORD) ||
+                    lower.contains(WAKE_WORD_2) ||
+                    lower.contains(WAKE_WORD_3) ||
+                    lower.contains(WAKE_WORD_4)
+                ) {
+                    openChat()
+                    scheduleListening(4000)
+                    return
+                }
+            }
+
+            scheduleListening(2000)
+        }
+
+        override fun onError(error: Int) {
+            isListening = false
+            scheduleListening(
+                when (error) {
+                    SpeechRecognizer.ERROR_NETWORK,
+                    SpeechRecognizer.ERROR_NETWORK_TIMEOUT -> 8000L
+                    SpeechRecognizer.ERROR_RECOGNIZER_BUSY -> {
+                        createRecognizer()
+                        4000L
+                    }
+                    else -> 3000L
+                }
+            )
+        }
+
+        override fun onEndOfSpeech() { isListening = false }
+        override fun onReadyForSpeech(params: Bundle?) {}
+        override fun onBeginningOfSpeech() {}
+        override fun onRmsChanged(rmsdB: Float) {}
+        override fun onBufferReceived(buffer: ByteArray?) {}
+        override fun onPartialResults(partialResults: Bundle?) {}
+        override fun onEvent(eventType: Int, params: Bundle?) {}
+    }
+
+    @RequiresApi(Build.VERSION_CODES.FROYO)
+    private fun destroyRecognizer() {
+        try {
+            speechRecognizer?.destroy()
+        } catch (_: Exception) {}
+        speechRecognizer = null
+        isListening = false
+    }
+
+    private fun openChat() {
+        val intent = Intent(this, ChatActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        }
+        startActivity(intent)
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/ui/ApiKeyActivity.kt">
+package com.cherinet.aria.ui
+
+import android.content.Context
+import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.cherinet.aria.databinding.ActivityApiKeyBinding
+
+class ApiKeyActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityApiKeyBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityApiKeyBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val prefs = getSharedPreferences("aria_prefs", Context.MODE_PRIVATE)
+
+        // Load existing key if exists
+        binding.etApiKey.setText(prefs.getString("api_key", ""))
+
+        binding.btnSave.setOnClickListener {
+            val key = binding.etApiKey.text.toString().trim()
+
+            if (key.isBlank()) {
+                Toast.makeText(this, "Paste API key first", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            prefs.edit().putString("api_key", key).apply()
+
+            Toast.makeText(this, "API Key Saved", Toast.LENGTH_SHORT).show()
+            finish()
+        }
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/ui/ChatActivity.kt">
+package com.cherinet.aria.ui
+
+import android.Manifest
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
+import android.os.Build
+import android.os.Bundle
+import android.provider.AlarmClock
+import android.view.inputmethod.EditorInfo
+import android.widget.Toast
+import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.cherinet.aria.ai.SecurityAnalyzer
+import com.cherinet.aria.automation.AppController
+import com.cherinet.aria.automation.ContactsHelper
+import com.cherinet.aria.databinding.ActivityChatBinding
+import com.cherinet.aria.model.ChatMessage
+import com.cherinet.aria.model.ChatRepository
+import com.cherinet.aria.service.NotificationReaderService
+import com.cherinet.aria.service.ScreenReaderService
+import com.cherinet.aria.service.WakeWordService
+import com.cherinet.aria.ui.ChatAdapter
+import com.cherinet.aria.voice.VoiceManager
+import com.cherinet.aria.R
+import com.cherinet.aria.ai.AiManager
+import com.cherinet.aria.ai.SecurityAnalyzer
+import com.cherinet.aria.automation.ActionRouter
+import com.cherinet.aria.automation.AppController
+import com.cherinet.aria.automation.ContactsHelper
+import com.cherinet.aria.databinding.ActivityChatBinding
+import com.cherinet.aria.model.ChatMessage
+import com.cherinet.aria.model.ChatRepository
+import com.cherinet.aria.service.NotificationReaderService
+import com.cherinet.aria.service.ScreenReaderService
+import com.cherinet.aria.service.WakeWordService
+import com.cherinet.aria.voice.VoiceManager
+import kotlinx.coroutines.launch
+
+class ChatActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityChatBinding
+    private lateinit var adapter: ChatAdapter
+    private lateinit var aiManager: AiManager
+    private lateinit var securityAnalyzer: SecurityAnalyzer
+    private lateinit var voiceManager: VoiceManager
+    private lateinit var appController: AppController
+    private lateinit var contactsHelper: ContactsHelper
+    private lateinit var actionRouter: ActionRouter
+    private var isProcessing = false
+
+    // ============ LIFECYCLE ============
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityChatBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        aiManager = AiManager.getInstance(this)
+        securityAnalyzer = SecurityAnalyzer()
+        voiceManager = VoiceManager(this)
+        appController = AppController(this)
+        contactsHelper = ContactsHelper(this)
+        actionRouter = ActionRouter(this, appController)
+
+        voiceManager.initialize()
+        setupVoiceCallbacks()
+        setupRecyclerView()
+        setupClickListeners()
+        addWelcomeMessage()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        WakeWordService.isPaused = true
+    }
+
+    override fun onPause() {
+        super.onPause()
+        WakeWordService.isPaused = false
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        voiceManager.shutdown()
+    }
+
+    // ============ SETUP ============
+
+    private fun setupRecyclerView() {
+        while (ChatRepository.messages.size > 50) {
+            ChatRepository.messages.removeAt(0)
+        }
+        adapter = ChatAdapter(ChatRepository.messages)
+        binding.rvMessages.layoutManager =
+            LinearLayoutManager(this).apply { stackFromEnd = true }
+        binding.rvMessages.adapter = adapter
+        if (ChatRepository.messages.isNotEmpty()) {
+            binding.rvMessages.scrollToPosition(ChatRepository.messages.size - 1)
+        }
+    }
+
+    private fun setupClickListeners() {
+        binding.btnSend.setOnClickListener {
+            val text = binding.etMessage.text.toString().trim()
+            if (text.isNotEmpty() && !isProcessing) {
+                sendMessage(text)
+                binding.etMessage.text?.clear()
+            }
+        }
+
+        binding.etMessage.setOnEditorActionListener { _, actionId, _ ->
+            if (actionId == EditorInfo.IME_ACTION_SEND) {
+                binding.btnSend.performClick()
+                true
+            } else false
+        }
+
+        binding.btnVoice.setOnClickListener {
+            if (voiceManager.isListening) {
+                voiceManager.stopListening()
+            } else {
+                if (ActivityCompat.checkSelfPermission(
+                        this, Manifest.permission.RECORD_AUDIO
+                    ) == PackageManager.PERMISSION_GRANTED
+                ) {
+                    voiceManager.startListening()
+                } else {
+                    ActivityCompat.requestPermissions(
+                        this,
+                        arrayOf(Manifest.permission.RECORD_AUDIO),
+                        100
+                    )
+                }
+            }
+        }
+
+        binding.btnScreenScan.setOnClickListener {
+            performScreenScan()
+        }
+    }
+
+    private fun setupVoiceCallbacks() {
+        voiceManager.onResult = { spokenText ->
+            runOnUiThread {
+                binding.etMessage.setText(spokenText)
+                sendMessage(spokenText)
+                binding.etMessage.text?.clear()
+            }
+        }
+        voiceManager.onError = { error ->
+            runOnUiThread {
+                Toast.makeText(this, error, Toast.LENGTH_SHORT).show()
+            }
+        }
+        voiceManager.onListeningStarted = {
+            runOnUiThread {
+                binding.btnVoice.setBackgroundResource(R.drawable.bg_message_user)
+                binding.etMessage.hint = "🎤 Listening..."
+            }
+        }
+        voiceManager.onListeningStopped = {
+            runOnUiThread {
+                binding.btnVoice.setBackgroundResource(R.drawable.bg_floating_button)
+                binding.etMessage.hint = "Ask ARIA anything..."
+            }
+        }
+    }
+
+    private fun addWelcomeMessage() {
+        if (ChatRepository.messages.isEmpty()) {
+            adapter.addMessage(
+                ChatMessage(
+                    content = "👋 Hi! I'm ARIA, your AI assistant.\n\n" +
+                            "I can help you with:\n" +
+                            "• Answering questions\n" +
+                            "• Detecting scams & phishing 🛡️\n" +
+                            "• Opening apps & making calls\n" +
+                            "• Setting alarms & timers ⏰\n" +
+                            "• Reading your notifications 📬\n" +
+                            "• Analyzing what's on your screen\n\n" +
+                            "Try: \"Open YouTube\" • \"Call mom\" • \"Set alarm 7am\"",
+                    isUser = false
+                )
+            )
+            scrollToBottom()
+        }
+    }
+
+    // ============ SEND MESSAGE (main flow) ============
+
+    private fun sendMessage(text: String) {
+        if (isProcessing) return
+        isProcessing = true
+
+        adapter.addMessage(ChatMessage(content = text, isUser = true))
+        scrollToBottom()
+        adapter.addMessage(ChatMessage(content = "⏳ Thinking...", isUser = false))
+        scrollToBottom()
+
+        val lowerText = text.lowercase().trim()
+
+        lifecycleScope.launch {
+            val response = try {
+                processUserInput(lowerText, text)
+            } catch (e: Exception) {
+                "⚠️ Something went wrong: ${e.localizedMessage}"
+            }
+
+            runOnUiThread {
+                // Remove the "Thinking..." message
+                if (ChatRepository.messages.isNotEmpty()) {
+                    ChatRepository.messages.removeAt(ChatRepository.messages.size - 1)
+                    adapter.notifyItemRemoved(ChatRepository.messages.size)
+                }
+                adapter.addMessage(ChatMessage(content = response, isUser = false))
+                scrollToBottom()
+                isProcessing = false
+                voiceManager.speak(response)
+            }
+        }
+    }
+
+    // ============ PROCESS INPUT ============
+    // This is the "brain" that decides what to do with each message.
+    // Ordered by specificity: most specific checks first, AI fallback last.
+
+    private suspend fun processUserInput(lower: String, original: String): String {
+
+        // ── 1. DEBUG TOOLS (developer only) ──
+        if (lower == "debug" || lower.startsWith("debug ") || lower.startsWith("find app ")) {
+            val query = when {
+                lower == "debug" -> null
+                lower.startsWith("find app ") -> lower.substring(9).trim()
+                lower.startsWith("debug ") -> lower.substring(6).trim()
+                else -> null
+            }
+            return findInstalledApps(query)
+        }
+        if (lower == "test youtube") return listAllYouTubeApps()
+        if (lower == "aria history") return "AI remembers ${aiManager.getHistorySize()} turns this session."
+
+        // ── 2. DIRECT CALL COMMAND ──
+        if (lower.startsWith("call ")) {
+            val name = original.substring(5).trim()
+            return handleCallCommand(name)
+        }
+
+        // ── 3. DIRECT APP OPEN COMMAND ──
+        if (lower.startsWith("open ")) {
+            val appName = original.substring(5).trim()
+            return if (appController.openApp(appName)) "✅ Opening $appName!"
+            else "❌ Couldn't find \"$appName\". Is it installed?"
+        }
+
+        // ── 4. DIRECT SMS COMMAND ──
+        if (lower.startsWith("send message to ") || lower.startsWith("text ")) {
+            val name = original
+                .replace(Regex("^(send message to |text )", RegexOption.IGNORE_CASE), "")
+                .trim()
+            return handleSmsCommand(name)
+        }
+
+        // ── 5. WEATHER (open browser search) ──
+        if (lower.contains("weather") || lower.contains("forecast") ||
+            lower.contains("temperature") || lower.contains("rain")
+        ) {
+            return handleWeather(original)
+        }
+
+        // ── 6. SCREEN ANALYSIS ──
+        if (lower.contains("what's on my screen") || lower.contains("read my screen") ||
+            lower.contains("read the screen") || lower.contains("what is on screen")
+        ) {
+            return performScreenAnalysis("Describe what's on screen briefly.")
+        }
+
+        // ── 7. SAFETY / SCAM CHECK ──
+        if (lower.contains("is this safe") || lower.contains("is this a scam") ||
+            lower.contains("check this") || lower.contains("is this legit") ||
+            lower.contains("should i click")
+        ) {
+            return performSafetyCheck()
+        }
+
+        // ── 8. ALARM ──
+        if (lower.contains("set alarm") || lower.contains("wake me") ||
+            lower.contains("wake me up at")
+        ) {
+            return handleAlarm(lower)
+        }
+
+        // ── 9. TIMER ──
+        if (lower.contains("set timer") || lower.contains("timer for")) {
+            return handleTimer(lower)
+        }
+
+        // ── 10. NOTIFICATIONS ──
+        if (lower.contains("notifications") || lower.contains("what did i miss") ||
+            lower.contains("any messages")
+        ) {
+            return readNotifications()
+        }
+
+        // ── 11. AI FALLBACK (everything else) ──
+        // This is where the AI decides what to do.
+        // It can either answer (chat) or trigger actions.
+        val result = actionRouter.handle(original, aiManager)
+        return result.displayText
+    }
+
+    // ============ COMMAND HANDLERS ============
+
+    private fun handleCallCommand(name: String): String {
+        val contact = contactsHelper.findContact(name)
+        return if (contact != null) {
+            appController.makeCall(contact.phoneNumber)
+            "📞 Calling ${contact.name}..."
+        } else {
+            "❌ Couldn't find \"$name\" in contacts.\n" +
+                    "Try the exact name as saved in your contacts."
+        }
+    }
+
+    private fun handleSmsCommand(name: String): String {
+        val contact = contactsHelper.findContact(name)
+        return if (contact != null) {
+            appController.sendSms(contact.phoneNumber)
+            "✉️ Opening message to ${contact.name}..."
+        } else {
+            "❌ Couldn't find \"$name\" in contacts."
+        }
+    }
+
+    private fun handleWeather(original: String): String {
+        return try {
+            val query = original
+                .replace(Regex("what('s| is) the", RegexOption.IGNORE_CASE), "")
+                .trim()
+                .ifBlank { "weather today" }
+            val searchUrl = "https://www.google.com/search?q=" +
+                    Uri.encode("weather $query")
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(searchUrl)).apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            }
+            startActivity(intent)
+            "🌤️ Searching weather for you!"
+        } catch (e: Exception) {
+            "⚠️ Could not open weather search."
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.GINGERBREAD)
+    private fun handleAlarm(lower: String): String {
+        return try {
+            val timeRegex = Regex("""(\d{1,2})\s*:?\s*(\d{0,2})\s*(am|pm)?""", RegexOption.IGNORE_CASE)
+            val match = timeRegex.find(lower)
+            var hour = 7; var minute = 0
+
+            if (match != null) {
+                hour = match.groupValues[1].toIntOrNull() ?: 7
+                minute = match.groupValues[2].toIntOrNull() ?: 0
+                val ampm = match.groupValues[3].lowercase()
+                if (ampm == "pm" && hour != 12) hour += 12
+                if (ampm == "am" && hour == 12) hour = 0
+            }
+
+            val alarmIntent = Intent(AlarmClock.ACTION_SET_ALARM).apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                putExtra(AlarmClock.EXTRA_HOUR, hour)
+                putExtra(AlarmClock.EXTRA_MINUTES, minute)
+                putExtra(AlarmClock.EXTRA_MESSAGE, "ARIA Alarm")
+                putExtra(AlarmClock.EXTRA_SKIP_UI, false)
+            }
+
+            val clockPackages = listOf(
+                "com.samsung.android.app.clockpack",
+                "com.sec.android.app.clockpackage",
+                "com.android.deskclock",
+                "com.google.android.deskclock"
+            )
+            for (pkg in clockPackages) {
+                try {
+                    packageManager.getPackageInfo(pkg, 0)
+                    alarmIntent.setPackage(pkg)
+                    startActivity(alarmIntent)
+                    return "⏰ Alarm set for ${hour}:${minute.toString().padStart(2, '0')}!"
+                } catch (_: Exception) { continue }
+            }
+            startActivity(alarmIntent.apply { setPackage(null) })
+            "⏰ Alarm set!"
+        } catch (e: Exception) {
+            "❌ Couldn't set alarm: ${e.localizedMessage}"
+        }
+    }
+
+    private fun handleTimer(lower: String): String {
+        return try {
+            val minMatch = Regex("""(\d+)\s*minute""").find(lower)
+            val secMatch = Regex("""(\d+)\s*second""").find(lower)
+            val minutes = minMatch?.groupValues?.get(1)?.toIntOrNull() ?: 0
+            val seconds = secMatch?.groupValues?.get(1)?.toIntOrNull() ?: 0
+            val totalSeconds = (minutes * 60) + seconds
+
+            val intent = Intent(AlarmClock.ACTION_SET_TIMER).apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                if (totalSeconds > 0) putExtra(AlarmClock.EXTRA_LENGTH, totalSeconds)
+                putExtra(AlarmClock.EXTRA_MESSAGE, "ARIA Timer")
+                putExtra(AlarmClock.EXTRA_SKIP_UI, true)
+            }
+            startActivity(intent)
+            "⏱️ Timer set for $minutes min $seconds sec!"
+        } catch (e: Exception) {
+            "❌ Couldn't set timer."
+        }
+    }
+
+    private fun readNotifications(): String {
+        val notifs = NotificationReaderService.recentNotifications
+        return if (notifs.isEmpty()) "📭 No recent notifications."
+        else "📬 Recent notifications:\n\n" + notifs.take(5).joinToString("\n─────────\n")
+    }
+
+    // ============ SCREEN / SECURITY ============
+
+    private fun performScreenScan() {
+        if (!ScreenReaderService.isServiceActive) {
+            Toast.makeText(this, "Enable Accessibility Service first", Toast.LENGTH_LONG).show()
+            return
+        }
+        sendMessage("Is this safe? Check my screen for threats.")
+    }
+
+    private suspend fun performSafetyCheck(): String {
+        val screenContent = ScreenReaderService.getScreenContent()
+        if (screenContent.isBlank()) {
+            return "⚠️ Can't see your screen. Enable Accessibility Service in settings."
+        }
+
+        val localResult = securityAnalyzer.analyzeText(screenContent)
+        val localVerdict = securityAnalyzer.getQuickVerdict(localResult)
+        val warningText = if (localResult.warnings.isNotEmpty()) {
+            "\n\n🔍 Findings:\n" + localResult.warnings.take(5).joinToString("\n")
+        } else ""
+
+        val aiAnalysis = aiManager.sendMessage(
+            "Briefly analyze this for safety threats:",
+            screenContent
+        )
+
+        return "$localVerdict$warningText\n\n🤖 AI:\n$aiAnalysis"
+    }
+
+    private suspend fun performScreenAnalysis(question: String): String {
+        val screenContent = ScreenReaderService.getScreenContent()
+        return if (screenContent.isNotBlank()) {
+            aiManager.sendMessage(question, screenContent)
+        } else {
+            "⚠️ Can't read screen. Enable Accessibility Service."
+        }
+    }
+
+    // ============ DEBUG HELPERS ============
+
+    private fun findInstalledApps(searchQuery: String? = null): String {
+        val pm = packageManager
+        val apps = pm.getInstalledApplications(PackageManager.GET_META_DATA)
+        val results = apps.filter { app ->
+            val label = pm.getApplicationLabel(app).toString().lowercase()
+            val pkg = app.packageName.lowercase()
+            when {
+                searchQuery == "all" -> true
+                searchQuery != null -> label.contains(searchQuery) || pkg.contains(searchQuery)
+                else -> listOf("youtube", "clock", "alarm", "camera", "chrome", "maps", "gmail",
+                    "gallery", "whatsapp", "telegram").any {
+                    label.contains(it) || pkg.contains(it)
+                }
+            }
+        }.map { app ->
+            "${pm.getApplicationLabel(app)} = ${app.packageName}"
+        }
+
+        return if (results.isEmpty()) "No apps found${if (searchQuery != null) " matching '$searchQuery'" else ""}"
+        else "${if (searchQuery == "all") "First 50 apps" else "Found"}:\n" +
+                results.take(if (searchQuery == "all") 50 else results.size).joinToString("\n")
+    }
+
+    private fun listAllYouTubeApps(): String {
+        val pm = packageManager
+        val apps = pm.getInstalledApplications(PackageManager.GET_META_DATA)
+            .filter {
+                val label = pm.getApplicationLabel(it).toString().lowercase()
+                val pkg = it.packageName.lowercase()
+                label.contains("you") || pkg.contains("you") ||
+                        label.contains("tube") || pkg.contains("tube") ||
+                        label.contains("video") || pkg.contains("video")
+            }
+        return if (apps.isEmpty()) "No YouTube-like apps found"
+        else "Possible YouTube apps:\n" + apps.joinToString("\n") {
+            "${pm.getApplicationLabel(it)} = ${it.packageName}"
+        }
+    }
+
+    // ============ SCROLL ============
+
+    private fun scrollToBottom() {
+        if (ChatRepository.messages.isNotEmpty()) {
+            binding.rvMessages.smoothScrollToPosition(ChatRepository.messages.size - 1)
+        }
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/ui/ChatAdapter.kt">
+package com.cherinet.aria.ui
+
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.cherinet.aria.R
+import com.cherinet.aria.model.ChatMessage
+
+class ChatAdapter(
+    private val messages: MutableList<ChatMessage>
+) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+    companion object {
+        private const val TYPE_USER = 0
+        private const val TYPE_AI = 1
+    }
+
+    override fun getItemViewType(position: Int): Int {
+        return if (messages[position].isUser) TYPE_USER else TYPE_AI
+    }
+
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): RecyclerView.ViewHolder {
+        return if (viewType == TYPE_USER) {
+            val view = LayoutInflater.from(parent.context)
+                .inflate(R.layout.item_message_user, parent, false)
+            UserViewHolder(view)
+        } else {
+            val view = LayoutInflater.from(parent.context)
+                .inflate(R.layout.item_message_ai, parent, false)
+            AiViewHolder(view)
+        }
+    }
+
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, pos: Int) {
+        val message = messages[pos]
+        when (holder) {
+            is UserViewHolder -> holder.bind(message)
+            is AiViewHolder -> holder.bind(message)
+        }
+    }
+
+    override fun getItemCount() = messages.size
+
+    fun addMessage(message: ChatMessage) {
+        messages.add(message)
+        notifyItemInserted(messages.size - 1)
+    }
+
+    // View Holders
+    class UserViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        private val tvMessage: TextView = view.findViewById(R.id.tvMessage)
+        fun bind(msg: ChatMessage) {
+            tvMessage.text = msg.content
+        }
+    }
+
+    class AiViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        private val tvMessage: TextView = view.findViewById(R.id.tvMessage)
+        fun bind(msg: ChatMessage) {
+            tvMessage.text = msg.content
+        }
+    }
+}
+</file>
+
+<file path="app/src/main/java/com/cherinet/aria/voice/VoiceManager.kt">
+package com.cherinet.aria.voice
+
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
+import android.speech.RecognitionListener
+import android.speech.RecognizerIntent
+import android.speech.SpeechRecognizer
+import android.speech.tts.TextToSpeech
+import java.util.Locale
+
+class VoiceManager(private val context: Context) {
+
+    private var tts: TextToSpeech? = null
+    private var speechRecognizer: SpeechRecognizer? = null
+    private var isTtsReady = false
+    var isListening = false
+        private set
+
+    // Callbacks
+    var onResult: ((String) -> Unit)? = null
+    var onError: ((String) -> Unit)? = null
+    var onListeningStarted: (() -> Unit)? = null
+    var onListeningStopped: (() -> Unit)? = null
+
+    fun initialize() {
+        // Initialize Text-to-Speech
+        tts = TextToSpeech(context) { status ->
+            if (status == TextToSpeech.SUCCESS) {
+                tts?.language = Locale.US
+                tts?.setSpeechRate(1.0f)
+                isTtsReady = true
+            }
+        }
+
+        // Initialize Speech Recognizer
+        if (SpeechRecognizer.isRecognitionAvailable(context)) {
+            speechRecognizer = SpeechRecognizer.createSpeechRecognizer(context)
+            speechRecognizer?.setRecognitionListener(createListener())
+        }
+    }
+
+    fun speak(text: String) {
+        if (!isTtsReady) {
+            initialize()
+            return
+        }
+
+        // Clean text for better speech
+        val cleanText = text
+            .replace(Regex("[\\p{So}\\p{Cn}]"), "") // remove emoji
+            .replace("⚠️", "Warning.")
+            .replace("🚨", "Alert!")
+            .replace("✅", "")
+            .replace("❌", "No.")
+            .replace("📞", "")
+            .replace("✉️", "")
+            .replace("🔍", "")
+            .replace("🤖", "")
+            .replace("\n", ". ")
+            .replace("•", ",")
+            .trim()
+            .take(500)
+
+        // Natural speaking speed
+        tts?.setSpeechRate(0.95f)
+        tts?.setPitch(1.05f)
+
+        tts?.speak(
+            cleanText,
+            TextToSpeech.QUEUE_FLUSH,
+            null,
+            "aria_tts"
+        )
+    }
+
+    fun stopSpeaking() {
+        tts?.stop()
+    }
+
+    fun startListening() {
+        if (isListening) return
+
+        val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+            putExtra(
+                RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM
+            )
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault())
+            putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 1)
+            putExtra(
+                RecognizerIntent.EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS,
+                5000L
+            )
+        }
+
+        try {
+            speechRecognizer?.startListening(intent)
+            isListening = true
+            onListeningStarted?.invoke()
+        } catch (e: Exception) {
+            onError?.invoke("Could not start voice recognition")
+        }
+    }
+
+    fun stopListening() {
+        speechRecognizer?.stopListening()
+        isListening = false
+        onListeningStopped?.invoke()
+    }
+
+    private fun createListener() = object : RecognitionListener {
+        override fun onReadyForSpeech(params: Bundle?) {}
+        override fun onBeginningOfSpeech() {}
+        override fun onRmsChanged(rmsdB: Float) {}
+        override fun onBufferReceived(buffer: ByteArray?) {}
+        override fun onEndOfSpeech() {
+            isListening = false
+            onListeningStopped?.invoke()
+        }
+
+        override fun onError(error: Int) {
+            isListening = false
+            onListeningStopped?.invoke()
+            val msg = when (error) {
+                SpeechRecognizer.ERROR_AUDIO -> "Audio error"
+                SpeechRecognizer.ERROR_NO_MATCH -> "Didn't catch that"
+                SpeechRecognizer.ERROR_NETWORK -> "Network error"
+                else -> "Voice recognition error"
+            }
+            onError?.invoke(msg)
+        }
+
+        override fun onResults(results: Bundle?) {
+            isListening = false
+            onListeningStopped?.invoke()
+            val matches = results?.getStringArrayList(
+                SpeechRecognizer.RESULTS_RECOGNITION
+            )
+            val text = matches?.firstOrNull() ?: ""
+            if (text.isNotBlank()) {
+                onResult?.invoke(text)
+            }
+        }
+
+        override fun onPartialResults(partialResults: Bundle?) {}
+        override fun onEvent(eventType: Int, params: Bundle?) {}
+    }
+
+    fun shutdown() {
+        tts?.shutdown()
+        speechRecognizer?.destroy()
+        tts = null
+        speechRecognizer = null
+    }
+}
+</file>
+
+<file path="app/src/test/java/com/cherinet/aria/ExampleUnitTest.kt">
+package com.cherinet.aria
+
+import org.junit.Test
+
+import org.junit.Assert.*
+
+/**
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * See [testing documentation](http://d.android.com/tools/testing).
+ */
+class ExampleUnitTest {
+    @Test
+    fun addition_isCorrect() {
+        assertEquals(4, 2 + 2)
+    }
+}
+</file>
+
+<file path=".gitignore">
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+</file>
+
+<file path=".gitignore.txt">
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+</file>
+
+<file path="app/.gitignore">
+/build
+</file>
+
+<file path="app/build.gradle.kts">
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
+
+android {
+    namespace = "com.cherinet.aria"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.cherinet.aria"
+        minSdk = 26
+        targetSdk = 34
+        versionCode = 2
+        versionName = "1.1"
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+        debug {
+            isMinifyEnabled = false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+
+dependencies {
+    // ── EXISTING (keep all of these) ──
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+    // ── NEW: Encrypted API key storage ──
+    // Uses Android Keystore hardware encryption to protect the API key
+    implementation("androidx.security:security-crypto:1.1.0-alpha06")
+
+    // ── NEW: ViewModel + LiveData (for future MVVM upgrades) ──
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+
+    // ── Tests (keep as-is) ──
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+}
+</file>
+
+<file path="app/proguard-rules.pro">
+# Add project specific ProGuard rules here.
+# You can control the set of applied configuration files using the
+# proguardFiles setting in build.gradle.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+# Uncomment this to preserve the line number information for
+# debugging stack traces.
+#-keepattributes SourceFile,LineNumberTable
+
+# If you keep the line number information, uncomment this to
+# hide the original source file name.
+#-renamesourcefileattribute SourceFile
+</file>
+
+<file path="app/src/main/AndroidManifest.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+
+        <!-- common apps -->
+        <package android:name="com.google.android.youtube"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="com.android.chrome"/>
+        <package android:name="com.whatsapp"/>
+    </queries>
+
+    <!-- Hardware features -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <!-- Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Floating button -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Background services -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Voice/Audio -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- Calls -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+    <!-- Contacts -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- SMS -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- Alarm -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AIAssistant"
+        android:supportsRtl="true"
+        tools:targetApi="34">
+
+        <!-- Main screen -->
+        <activity
+            android:name="com.cherinet.aria.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Chat screen -->
+        <activity
+            android:name="com.cherinet.aria.ui.ChatActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- API Key screen -->
+        <activity
+            android:name="com.cherinet.aria.ui.ApiKeyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Floating button service -->
+        <service
+            android:name="com.cherinet.aria.service.FloatingButtonService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="AI Assistant Floating Button" />
+        </service>
+
+        <!-- Wake word service -->
+        <service
+            android:name="com.cherinet.aria.service.WakeWordService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="microphone"
+            android:stopWithTask="false" />
+
+        <!-- Screen reader accessibility service -->
+        <service
+            android:name="com.cherinet.aria.service.ScreenReaderService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!-- Notification listener service -->
+        <service
+            android:name="com.cherinet.aria.service.NotificationReaderService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>
+</file>
+
+<file path="app/src/main/res/drawable/bg_button_primary.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="135"
+        android:startColor="#6C63FF"
+        android:endColor="#8B83FF" />
+    <corners android:radius="12dp" />
+</shape>
+</file>
+
+<file path="app/src/main/res/drawable/bg_card.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/surface_dark" />
+    <corners android:radius="16dp" />
+    <stroke
+        android:width="1dp"
+        android:color="#2A2A4A" />
+</shape>
+</file>
+
+<file path="app/src/main/res/drawable/bg_floating_button.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:angle="135"
+        android:startColor="#6C63FF"
+        android:endColor="#8B83FF" />
+    <size
+        android:width="56dp"
+        android:height="56dp" />
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF" />
+</shape>
+</file>
+
+<file path="app/src/main/res/drawable/bg_input_field.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/input_bg" />
+    <corners android:radius="24dp" />
+    <stroke
+        android:width="1dp"
+        android:color="#2A2A4A" />
+</shape>
+</file>
+
+<file path="app/src/main/res/drawable/bg_message_ai.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ai_bubble" />
+    <corners
+        android:topLeftRadius="18dp"
+        android:topRightRadius="18dp"
+        android:bottomLeftRadius="4dp"
+        android:bottomRightRadius="18dp" />
+</shape>
+</file>
+
+<file path="app/src/main/res/drawable/bg_message_user.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/user_bubble" />
+    <corners
+        android:topLeftRadius="18dp"
+        android:topRightRadius="18dp"
+        android:bottomLeftRadius="18dp"
+        android:bottomRightRadius="4dp" />
+</shape>
+</file>
+
+<file path="app/src/main/res/drawable/ic_assistant.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10
+        10,-4.48 10,-10S17.52,2 12,2zM12,20c-4.41,0 -8,-3.59
+        -8,-8s3.59,-8 8,-8 8,3.59 8,8 -3.59,8 -8,8z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M9,11.5m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M15,11.5m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,17.5c2.33,0 4.31,-1.46
+        5.11,-3.5L6.89,14c0.8,2.04 2.78,3.5 5.11,3.5z" />
+</vector>
+</file>
+
+<file path="app/src/main/res/drawable/ic_launcher_background.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#3DDC84"
+        android:pathData="M0,0h108v108h-108z" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M9,0L9,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,0L19,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M29,0L29,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M39,0L39,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M49,0L49,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M59,0L59,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M69,0L69,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M79,0L79,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M89,0L89,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M99,0L99,108"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,9L108,9"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,19L108,19"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,29L108,29"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,39L108,39"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,49L108,49"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,59L108,59"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,69L108,69"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,79L108,79"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,89L108,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,99L108,99"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,29L89,29"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,39L89,39"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,49L89,49"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,59L89,59"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,69L89,69"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,79L89,79"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M29,19L29,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M39,19L39,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M49,19L49,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M59,19L59,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M69,19L69,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M79,19L79,89"
+        android:strokeWidth="0.8"
+        android:strokeColor="#33FFFFFF" />
+</vector>
+</file>
+
+<file path="app/src/main/res/drawable/ic_launcher_foreground.xml">
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="85.84757"
+                android:endY="92.4963"
+                android:startX="42.9492"
+                android:startY="49.59793"
+                android:type="linear">
+                <item
+                    android:color="#44000000"
+                    android:offset="0.0" />
+                <item
+                    android:color="#00000000"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="nonZero"
+        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+</vector>
+</file>
+
+<file path="app/src/main/res/drawable/ic_mic.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,14c1.66,0 3,-1.34 3,-3V5c0,-1.66
+        -1.34,-3 -3,-3S9,3.34 9,5v6C9,12.66 10.34,14 12,14z
+        M17.3,11c0,3 -2.54,5.1 -5.3,5.1S6.7,14 6.7,11H5
+        c0,3.41 2.72,6.23 6,6.72V21h2v-3.28c3.28,-0.49
+        6,-3.31 6,-6.72H17.3z" />
+</vector>
+</file>
+
+<file path="app/src/main/res/drawable/ic_send.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M2.01,21L23,12 2.01,3 2,10l15,2 -15,2z" />
+</vector>
+</file>
+
+<file path="app/src/main/res/layout/activity_api_key.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etApiKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Paste your OpenRouter API key here" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save API Key"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
+</file>
+
+<file path="app/src/main/res/layout/activity_chat.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:orientation="vertical">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/surface_dark"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_assistant"
+            android:background="@drawable/bg_floating_button"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ARIA"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOnlineStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● Online"
+                android:textColor="@color/safe_green"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnScreenScan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_assistant"
+            android:scaleType="centerInside"
+            android:contentDescription="Scan screen"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Messages List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="12dp" />
+
+    <!-- Input Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface_dark"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/btnVoice"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_floating_button"
+            android:src="@drawable/ic_mic"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            android:contentDescription="Voice input" />
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Ask ARIA anything..."
+            android:inputType="text"
+            android:imeOptions="actionSend"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_floating_button"
+            android:src="@drawable/ic_send"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            android:contentDescription="Send" />
+    </LinearLayout>
+</LinearLayout>
+</file>
+
+<file path="app/src/main/res/layout/activity_main.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_assistant"
+            android:background="@drawable/bg_floating_button"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="A R I A"
+            android:textColor="@color/text_primary"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Your Intelligent Android Assistant"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- API CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔑 API Key"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etApiKey"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:hint="sk-..."
+                android:inputType="textPassword"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/text_primary" />
+
+            <Button
+                android:id="@+id/btnSaveKey"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:text="Save Key" />
+
+            <Button
+                android:id="@+id/btnRuntimePerms"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_field"
+                android:text="Grant Phone Permissions"
+                android:textColor="@color/text_primary"
+                android:textAllCaps="false"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Permissions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btnOverlayPerm"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="Overlay Permission" />
+
+            <Button
+                android:id="@+id/btnAccessibilityPerm"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="Accessibility Service" />
+        </LinearLayout>
+
+        <!-- STATUS -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Not running"
+            android:layout_marginTop="16dp" />
+
+        <!-- START -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Start ARIA"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Stop ARIA"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+</file>
+
+<file path="app/src/main/res/layout/item_message_ai.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:paddingVertical="4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300dp"
+        android:background="@drawable/bg_message_ai"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ARIA"
+            android:textColor="@color/primary"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:lineSpacingExtra="2dp" />
+    </LinearLayout>
+</LinearLayout>
+</file>
+
+<file path="app/src/main/res/layout/item_message_user.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:paddingVertical="4dp">
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="280dp"
+        android:background="@drawable/bg_message_user"
+        android:padding="14dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:lineSpacingExtra="2dp" />
+</LinearLayout>
+</file>
+
+<file path="app/src/main/res/layout/layout_floating_button.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/ivFloatingIcon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_floating_button"
+        android:src="@drawable/ic_assistant"
+        android:padding="14dp"
+        android:elevation="8dp" />
+</FrameLayout>
+</file>
+
+<file path="app/src/main/res/mipmap-anydpi/ic_launcher_round.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_background" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+    <monochrome android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>
+</file>
+
+<file path="app/src/main/res/mipmap-anydpi/ic_launcher.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_background" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+    <monochrome android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>
+</file>
+
+<file path="app/src/main/res/values-night/themes.xml">
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AIAssistant" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>
+</file>
+
+<file path="app/src/main/res/values/colors.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#6C63FF</color>
+    <color name="primary_dark">#5A52D5</color>
+    <color name="accent">#FF6584</color>
+    <color name="background_dark">#0F0E17</color>
+    <color name="surface_dark">#1A1A2E</color>
+    <color name="card_dark">#222244</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#B0B0C0</color>
+    <color name="user_bubble">#6C63FF</color>
+    <color name="ai_bubble">#2A2A4A</color>
+    <color name="safe_green">#4CAF50</color>
+    <color name="warning_orange">#FF9800</color>
+    <color name="danger_red">#F44336</color>
+    <color name="input_bg">#16213E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
+</file>
+
+<file path="app/src/main/res/values/strings.xml">
+<resources>
+    <string name="app_name">ARIA</string>
+    <string name="accessibility_service_description">
+        ARIA reads on-screen content to help detect scams,
+        analyze links, and assist you with safety checks.
+        No data is stored or shared.
+    </string>
+    <string name="notification_channel_name">ARIA Assistant</string>
+    <string name="notification_channel_desc">Keeps ARIA running</string>
+</resources>
+</file>
+
+<file path="app/src/main/res/values/themes.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AIAssistant" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:navigationBarColor">@color/background_dark</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+    </style>
+</resources>
+</file>
+
+<file path="app/src/main/res/xml/accessibility_service_config.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowContentChanged|typeWindowStateChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagReportViewIds|flagIncludeNotImportantViews"
+    android:canRetrieveWindowContent="true"
+    android:description="@string/accessibility_service_description"
+    android:notificationTimeout="200"
+    android:settingsActivity="com.cherinet.aria.MainActivity" />
+</file>
+
+<file path="app/src/main/res/xml/backup_rules.xml">
+<?xml version="1.0" encoding="utf-8"?><!--
+   Sample backup rules file; uncomment and customize as necessary.
+   See https://developer.android.com/guide/topics/data/autobackup
+   for details.
+   Note: This file is ignored for devices older than API 31
+   See https://developer.android.com/about/versions/12/backup-restore
+-->
+<full-backup-content>
+    <!--
+   <include domain="sharedpref" path="."/>
+   <exclude domain="sharedpref" path="device.xml"/>
+-->
+</full-backup-content>
+</file>
+
+<file path="app/src/main/res/xml/data_extraction_rules.xml">
+<?xml version="1.0" encoding="utf-8"?><!--
+   Sample data extraction rules file; uncomment and customize as necessary.
+   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   for details.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- TODO: Use <include> and <exclude> to control what is backed up.
+        <include .../>
+        <exclude .../>
+        -->
+    </cloud-backup>
+    <!--
+    <device-transfer>
+        <include .../>
+        <exclude .../>
+    </device-transfer>
+    -->
+</data-extraction-rules>
+</file>
+
+<file path="build.gradle.kts">
+plugins {
+    id("com.android.application") version "8.2.1" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.0" apply false
+}
+</file>
+
+<file path="gradle.properties">
+# Project-wide Gradle settings.
+# IDE (e.g. Android Studio) users:
+# Gradle settings configured through the IDE *will override*
+# any settings specified in this file.
+# For more details on how to configure your build environment visit
+# http://www.gradle.org/docs/current/userguide/build_environment.html
+# Specifies the JVM arguments used for the daemon process.
+# The setting is particularly useful for tweaking memory settings.
+org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
+# When configured, Gradle will run in incubating parallel mode.
+# This option should only be used with decoupled projects. For more details, visit
+# https://developer.android.com/r/tools/gradle-multi-project-decoupled-projects
+# org.gradle.parallel=true
+# Kotlin code style for this project: "official" or "obsolete":
+kotlin.code.style=official
+android.useAndroidX=true
+android.enableJetifier=true
+</file>
+
+<file path="gradle/gradle-daemon-jvm.properties">
+#This file is generated by updateDaemonJvm
+toolchainUrl.FREE_BSD.AARCH64=https\://api.foojay.io/disco/v3.0/ids/ec7520a1e057cd116f9544c42142a16b/redirect
+toolchainUrl.FREE_BSD.X86_64=https\://api.foojay.io/disco/v3.0/ids/4c4f879899012ff0a8b2e2117df03b0e/redirect
+toolchainUrl.LINUX.AARCH64=https\://api.foojay.io/disco/v3.0/ids/ec7520a1e057cd116f9544c42142a16b/redirect
+toolchainUrl.LINUX.X86_64=https\://api.foojay.io/disco/v3.0/ids/4c4f879899012ff0a8b2e2117df03b0e/redirect
+toolchainUrl.MAC_OS.AARCH64=https\://api.foojay.io/disco/v3.0/ids/73bcfb608d1fde9fb62e462f834a3299/redirect
+toolchainUrl.MAC_OS.X86_64=https\://api.foojay.io/disco/v3.0/ids/846ee0d876d26a26f37aa1ce8de73224/redirect
+toolchainUrl.UNIX.AARCH64=https\://api.foojay.io/disco/v3.0/ids/ec7520a1e057cd116f9544c42142a16b/redirect
+toolchainUrl.UNIX.X86_64=https\://api.foojay.io/disco/v3.0/ids/4c4f879899012ff0a8b2e2117df03b0e/redirect
+toolchainUrl.WINDOWS.AARCH64=https\://api.foojay.io/disco/v3.0/ids/9482ddec596298c84656d31d16652665/redirect
+toolchainUrl.WINDOWS.X86_64=https\://api.foojay.io/disco/v3.0/ids/39701d92e1756bb2f141eb67cd4c660e/redirect
+toolchainVersion=21
+</file>
+
+<file path="gradle/libs.versions.toml">
+[versions]
+agp = "8.7.3"
+kotlin = "2.1.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+</file>
+
+<file path="gradle/wrapper/gradle-wrapper.properties">
+#Tue Mar 31 21:52:24 BST 2026
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.2-bin.zip
+networkTimeout=10000
+validateDistributionUrl=true
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+</file>
+
+<file path="gradlew">
+#!/bin/sh
+
+#
+# Copyright © 2015 the original authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+##############################################################################
+#
+#   Gradle start up script for POSIX generated by Gradle.
+#
+#   Important for running:
+#
+#   (1) You need a POSIX-compliant shell to run this script. If your /bin/sh is
+#       noncompliant, but you have some other compliant shell such as ksh or
+#       bash, then to run this script, type that shell name before the whole
+#       command line, like:
+#
+#           ksh Gradle
+#
+#       Busybox and similar reduced shells will NOT work, because this script
+#       requires all of these POSIX shell features:
+#         * functions;
+#         * expansions «$var», «${var}», «${var:-default}», «${var+SET}»,
+#           «${var#prefix}», «${var%suffix}», and «$( cmd )»;
+#         * compound commands having a testable exit status, especially «case»;
+#         * various built-in commands including «command», «set», and «ulimit».
+#
+#   Important for patching:
+#
+#   (2) This script targets any POSIX shell, so it avoids extensions provided
+#       by Bash, Ksh, etc; in particular arrays are avoided.
+#
+#       The "traditional" practice of packing multiple parameters into a
+#       space-separated string is a well documented source of bugs and security
+#       problems, so this is (mostly) avoided, by progressively accumulating
+#       options in "$@", and eventually passing that to Java.
+#
+#       Where the inherited environment variables (DEFAULT_JVM_OPTS, JAVA_OPTS,
+#       and GRADLE_OPTS) rely on word-splitting, this is performed explicitly;
+#       see the in-line comments for details.
+#
+#       There are tweaks for specific operating systems such as AIX, CygWin,
+#       Darwin, MinGW, and NonStop.
+#
+#   (3) This script is generated from the Groovy template
+#       https://github.com/gradle/gradle/blob/HEAD/platforms/jvm/plugins-application/src/main/resources/org/gradle/api/internal/plugins/unixStartScript.txt
+#       within the Gradle project.
+#
+#       You can find Gradle at https://github.com/gradle/gradle/.
+#
+##############################################################################
+
+# Attempt to set APP_HOME
+
+# Resolve links: $0 may be a link
+app_path=$0
+
+# Need this for daisy-chained symlinks.
+while
+    APP_HOME=${app_path%"${app_path##*/}"}  # leaves a trailing /; empty if no leading path
+    [ -h "$app_path" ]
+do
+    ls=$( ls -ld "$app_path" )
+    link=${ls#*' -> '}
+    case $link in             #(
+      /*)   app_path=$link ;; #(
+      *)    app_path=$APP_HOME$link ;;
+    esac
+done
+
+# This is normally unused
+# shellcheck disable=SC2034
+APP_BASE_NAME=${0##*/}
+# Discard cd standard output in case $CDPATH is set (https://github.com/gradle/gradle/issues/25036)
+APP_HOME=$( cd -P "${APP_HOME:-./}" > /dev/null && printf '%s\n' "$PWD" ) || exit
+
+# Use the maximum available, or set MAX_FD != -1 to use that value.
+MAX_FD=maximum
+
+warn () {
+    echo "$*"
+} >&2
+
+die () {
+    echo
+    echo "$*"
+    echo
+    exit 1
+} >&2
+
+# OS specific support (must be 'true' or 'false').
+cygwin=false
+msys=false
+darwin=false
+nonstop=false
+case "$( uname )" in                #(
+  CYGWIN* )         cygwin=true  ;; #(
+  Darwin* )         darwin=true  ;; #(
+  MSYS* | MINGW* )  msys=true    ;; #(
+  NONSTOP* )        nonstop=true ;;
+esac
+
+CLASSPATH="\\\"\\\""
+
+
+# Determine the Java command to use to start the JVM.
+if [ -n "$JAVA_HOME" ] ; then
+    if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
+        # IBM's JDK on AIX uses strange locations for the executables
+        JAVACMD=$JAVA_HOME/jre/sh/java
+    else
+        JAVACMD=$JAVA_HOME/bin/java
+    fi
+    if [ ! -x "$JAVACMD" ] ; then
+        die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
+
+Please set the JAVA_HOME variable in your environment to match the
+location of your Java installation."
+    fi
+else
+    JAVACMD=java
+    if ! command -v java >/dev/null 2>&1
+    then
+        die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+
+Please set the JAVA_HOME variable in your environment to match the
+location of your Java installation."
+    fi
+fi
+
+# Increase the maximum file descriptors if we can.
+if ! "$cygwin" && ! "$darwin" && ! "$nonstop" ; then
+    case $MAX_FD in #(
+      max*)
+        # In POSIX sh, ulimit -H is undefined. That's why the result is checked to see if it worked.
+        # shellcheck disable=SC2039,SC3045
+        MAX_FD=$( ulimit -H -n ) ||
+            warn "Could not query maximum file descriptor limit"
+    esac
+    case $MAX_FD in  #(
+      '' | soft) :;; #(
+      *)
+        # In POSIX sh, ulimit -n is undefined. That's why the result is checked to see if it worked.
+        # shellcheck disable=SC2039,SC3045
+        ulimit -n "$MAX_FD" ||
+            warn "Could not set maximum file descriptor limit to $MAX_FD"
+    esac
+fi
+
+# Collect all arguments for the java command, stacking in reverse order:
+#   * args from the command line
+#   * the main class name
+#   * -classpath
+#   * -D...appname settings
+#   * --module-path (only if needed)
+#   * DEFAULT_JVM_OPTS, JAVA_OPTS, and GRADLE_OPTS environment variables.
+
+# For Cygwin or MSYS, switch paths to Windows format before running java
+if "$cygwin" || "$msys" ; then
+    APP_HOME=$( cygpath --path --mixed "$APP_HOME" )
+    CLASSPATH=$( cygpath --path --mixed "$CLASSPATH" )
+
+    JAVACMD=$( cygpath --unix "$JAVACMD" )
+
+    # Now convert the arguments - kludge to limit ourselves to /bin/sh
+    for arg do
+        if
+            case $arg in                                #(
+              -*)   false ;;                            # don't mess with options #(
+              /?*)  t=${arg#/} t=/${t%%/*}              # looks like a POSIX filepath
+                    [ -e "$t" ] ;;                      #(
+              *)    false ;;
+            esac
+        then
+            arg=$( cygpath --path --ignore --mixed "$arg" )
+        fi
+        # Roll the args list around exactly as many times as the number of
+        # args, so each arg winds up back in the position where it started, but
+        # possibly modified.
+        #
+        # NB: a `for` loop captures its iteration list before it begins, so
+        # changing the positional parameters here affects neither the number of
+        # iterations, nor the values presented in `arg`.
+        shift                   # remove old arg
+        set -- "$@" "$arg"      # push replacement arg
+    done
+fi
+
+
+# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
+
+# Collect all arguments for the java command:
+#   * DEFAULT_JVM_OPTS, JAVA_OPTS, and optsEnvironmentVar are not allowed to contain shell fragments,
+#     and any embedded shellness will be escaped.
+#   * For example: A user cannot expect ${Hostname} to be expanded, as it is an environment variable and will be
+#     treated as '${Hostname}' itself on the command line.
+
+set -- \
+        "-Dorg.gradle.appname=$APP_BASE_NAME" \
+        -classpath "$CLASSPATH" \
+        -jar "$APP_HOME/gradle/wrapper/gradle-wrapper.jar" \
+        "$@"
+
+# Stop when "xargs" is not available.
+if ! command -v xargs >/dev/null 2>&1
+then
+    die "xargs is not available"
+fi
+
+# Use "xargs" to parse quoted args.
+#
+# With -n1 it outputs one arg per line, with the quotes and backslashes removed.
+#
+# In Bash we could simply go:
+#
+#   readarray ARGS < <( xargs -n1 <<<"$var" ) &&
+#   set -- "${ARGS[@]}" "$@"
+#
+# but POSIX shell has neither arrays nor command substitution, so instead we
+# post-process each arg (as a line of input to sed) to backslash-escape any
+# character that might be a shell metacharacter, then use eval to reverse
+# that process (while maintaining the separation between arguments), and wrap
+# the whole thing up as a single "set" statement.
+#
+# This will of course break if any of these variables contains a newline or
+# an unmatched quote.
+#
+
+eval "set -- $(
+        printf '%s\n' "$DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS" |
+        xargs -n1 |
+        sed ' s~[^-[:alnum:]+,./:=@_]~\\&~g; ' |
+        tr '\n' ' '
+    )" '"$@"'
+
+exec "$JAVACMD" "$@"
+</file>
+
+<file path="gradlew.bat">
+@rem
+@rem Copyright 2015 the original author or authors.
+@rem
+@rem Licensed under the Apache License, Version 2.0 (the "License");
+@rem you may not use this file except in compliance with the License.
+@rem You may obtain a copy of the License at
+@rem
+@rem      https://www.apache.org/licenses/LICENSE-2.0
+@rem
+@rem Unless required by applicable law or agreed to in writing, software
+@rem distributed under the License is distributed on an "AS IS" BASIS,
+@rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+@rem See the License for the specific language governing permissions and
+@rem limitations under the License.
+@rem
+@rem SPDX-License-Identifier: Apache-2.0
+@rem
+
+@if "%DEBUG%"=="" @echo off
+@rem ##########################################################################
+@rem
+@rem  Gradle startup script for Windows
+@rem
+@rem ##########################################################################
+
+@rem Set local scope for the variables with windows NT shell
+if "%OS%"=="Windows_NT" setlocal
+
+set DIRNAME=%~dp0
+if "%DIRNAME%"=="" set DIRNAME=.
+@rem This is normally unused
+set APP_BASE_NAME=%~n0
+set APP_HOME=%DIRNAME%
+
+@rem Resolve any "." and ".." in APP_HOME to make it shorter.
+for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
+
+@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
+
+@rem Find java.exe
+if defined JAVA_HOME goto findJavaFromJavaHome
+
+set JAVA_EXE=java.exe
+%JAVA_EXE% -version >NUL 2>&1
+if %ERRORLEVEL% equ 0 goto execute
+
+echo. 1>&2
+echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2
+echo. 1>&2
+echo Please set the JAVA_HOME variable in your environment to match the 1>&2
+echo location of your Java installation. 1>&2
+
+goto fail
+
+:findJavaFromJavaHome
+set JAVA_HOME=%JAVA_HOME:"=%
+set JAVA_EXE=%JAVA_HOME%/bin/java.exe
+
+if exist "%JAVA_EXE%" goto execute
+
+echo. 1>&2
+echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME% 1>&2
+echo. 1>&2
+echo Please set the JAVA_HOME variable in your environment to match the 1>&2
+echo location of your Java installation. 1>&2
+
+goto fail
+
+:execute
+@rem Setup the command line
+
+set CLASSPATH=
+
+
+@rem Execute Gradle
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" -jar "%APP_HOME%\gradle\wrapper\gradle-wrapper.jar" %*
+
+:end
+@rem End local scope for the variables with windows NT shell
+if %ERRORLEVEL% equ 0 goto mainEnd
+
+:fail
+rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
+rem the _cmd.exe /c_ return code!
+set EXIT_CODE=%ERRORLEVEL%
+if %EXIT_CODE% equ 0 set EXIT_CODE=1
+if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
+exit /b %EXIT_CODE%
+
+:mainEnd
+if "%OS%"=="Windows_NT" endlocal
+
+:omega
+</file>
+
+<file path="settings.gradle.kts">
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "AIAssistant"
+include(":app")
+</file>
+
+<file path="README.md">
+# ARIA – Android AI Assistant
+
+ARIA is an Android-based AI assistant inspired by JARVIS and FRIDAY.
+
+I built ARIA to explore how AI can become more visual, interactive, and accessible—especially for people in communities with limited access to advanced technology.
+
+---
+
+## Features
+
+✅ Voice interaction  
+✅ Wake word detection  
+✅ Floating assistant interface  
+✅ Accessibility service integration  
+✅ App control and automation  
+✅ Security analysis  
+
+---
+
+## Tech Stack
+
+- Kotlin
+- Android SDK
+- Speech Recognition
+- Accessibility Services
+- AI Integration APIs
+- Android Studio
+
+---
+
+## Screenshots
+
+<h3>Home Screen</h3>
+<img src="screenshots/home.jpg" width="250">
+
+<h3>Voice Interaction</h3>
+<img src="screenshots/voice.jpg" width="250">
+
+<h3>Chat Interface</h3>
+<img src="screenshots/chat.jpg" width="250">
+
+---
+
+## Vision
+
+My goal is to build AI systems that are more human, more visual, and more useful for real people.  
+In the future, I want ARIA to support local languages such as Amharic and help make AI more accessible in Ethiopia.
+
+---
+
+## Future Goals
+
+- Offline AI support
+- Amharic voice assistant
+- Better gesture control
+- Smarter automation
+</file>
+
+</files>

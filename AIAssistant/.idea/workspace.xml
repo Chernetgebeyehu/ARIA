@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc310bf2-33cb-4113-bdda-b257953bab8e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/ai/RuleEngine.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/automation/CommandParser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/security/SecurityGuard.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/voice/VoiceStateMachine.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/src/main/res/xml/network_security_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/AndroidProjectSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/androidTest/java/com/example/aiassistant/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/androidTest/java/com/cherinet/aria/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/ai/AiManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/ai/AiManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/ai/OpenRouterModels.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/ai/OpenRouterModels.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/ai/SecurityAnalyzer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/ai/SecurityAnalyzer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/automation/ActionRouter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/automation/ActionRouter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/automation/AppController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/automation/AppController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/automation/ContactsHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/automation/ContactsHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/model/ChatMessage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/model/ChatMessage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/services/FloatingButtonService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/services/FloatingButtonService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/services/NotificationReaderService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/services/NotificationReaderService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/services/ScreenReaderService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/services/ScreenReaderService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/services/WakeWordService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/services/WakeWordService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/ui/ApiKeyActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/ui/ApiKeyActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/ui/ChatActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/ui/ChatActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/ui/ChatAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/ui/ChatAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/aiassistant/voice/VoiceManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/cherinet/aria/voice/VoiceManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/bg_button_primary.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/drawable/bg_button_primary.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/bg_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/drawable/bg_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/bg_floating_button.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/drawable/bg_floating_button.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/bg_input_field.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/drawable/bg_input_field.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/bg_message_ai.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/drawable/bg_message_ai.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/bg_message_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/drawable/bg_message_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_chat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/activity_chat.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/item_message_ai.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/item_message_ai.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/item_message_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/item_message_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/xml/accessibility_service_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/xml/accessibility_service_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/test/java/com/example/aiassistant/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/test/java/com/cherinet/aria/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3ERGPhHy6bE9DMYvqxQAXpKEp0H" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "android.gradle.sync.needed": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc310bf2-33cb-4113-bdda-b257953bab8e" name="Changes" comment="" />
+      <created>1780147251241</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780147251241</updated>
+    </task>
+    <servers />
+  </component>
+</project>

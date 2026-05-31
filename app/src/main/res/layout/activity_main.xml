@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_dark"
@@ -10,124 +9,184 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp"
-        android:gravity="center_horizontal">
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="32dp">
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="32dp"
-            android:src="@drawable/ic_assistant"
-            android:background="@drawable/bg_floating_button"
-            android:padding="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="A R I A"
-            android:textColor="@color/text_primary"
-            android:textSize="32sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Your Intelligent Android Assistant"
-            android:textColor="@color/text_secondary"
-            android:textSize="14sp" />
-
-        <!-- API CARD -->
+        <!-- HERO -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:background="@drawable/bg_card"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:gravity="center"
+            android:paddingTop="56dp"
+            android:paddingBottom="32dp">
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:background="@drawable/bg_floating_button"
+                android:padding="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="🔑 API Key"
+                android:layout_marginTop="20dp"
+                android:text="ARIA"
                 android:textColor="@color/text_primary"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.2" />
 
-            <EditText
-                android:id="@+id/etApiKey"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="12dp"
-                android:hint="sk-..."
-                android:inputType="textPassword"
-                android:paddingHorizontal="16dp"
-                android:textColor="@color/text_primary" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Adaptive Reasoning Intelligence Assistant"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:gravity="center" />
 
-            <Button
-                android:id="@+id/btnSaveKey"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:text="Save Key" />
+                android:text="Powered by Gemini 2.5 Flash"
+                android:textColor="@color/primary_light"
+                android:textSize="11sp"
+                android:background="@drawable/bg_card"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="5dp" />
+
+        </LinearLayout>
+
+        <!-- STATUS CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SYSTEM STATUS"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checking..."
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:fontFamily="monospace"
+                android:lineSpacingMultiplier="1.6" />
+
+        </LinearLayout>
+
+        <!-- PERMISSIONS CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PERMISSIONS"
+                android:textColor="@color/text_secondary"
+                android:textSize="10sp"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="14dp" />
 
             <Button
                 android:id="@+id/btnRuntimePerms"
                 android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/bg_input_field"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_card"
                 android:text="Grant Phone Permissions"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="false"
-                android:textSize="13sp" />
-        </LinearLayout>
-
-        <!-- Permissions -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/bg_card"
-            android:orientation="vertical"
-            android:padding="20dp">
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp" />
 
             <Button
                 android:id="@+id/btnOverlayPerm"
                 android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:text="Overlay Permission" />
+                android:layout_height="48dp"
+                android:background="@drawable/bg_card"
+                android:text="Overlay Permission"
+                android:textColor="@color/text_primary"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp" />
 
             <Button
                 android:id="@+id/btnAccessibilityPerm"
                 android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:text="Accessibility Service" />
+                android:layout_height="48dp"
+                android:background="@drawable/bg_card"
+                android:text="Accessibility Service"
+                android:textColor="@color/text_primary"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
         </LinearLayout>
 
-        <!-- STATUS -->
-        <TextView
-            android:id="@+id/tvStatus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Status: Not running"
-            android:layout_marginTop="16dp" />
+        <!-- Hidden — kept for ViewBinding compatibility only -->
+        <EditText
+            android:id="@+id/etApiKey"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone" />
 
-        <!-- START -->
+        <Button
+            android:id="@+id/btnSaveKey"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+
+        <!-- LAUNCH -->
         <Button
             android:id="@+id/btnStart"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:text="Start ARIA"
-            android:layout_marginTop="24dp" />
+            android:layout_height="60dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="Launch ARIA"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp" />
 
         <Button
             android:id="@+id/btnStop"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:background="@drawable/bg_card"
             android:text="Stop ARIA"
-            android:layout_marginTop="8dp" />
+            android:textColor="@color/text_secondary"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Say Hey ARIA to open from any screen"
+            android:textColor="@color/text_hint"
+            android:textSize="12sp"
+            android:gravity="center" />
 
     </LinearLayout>
 
